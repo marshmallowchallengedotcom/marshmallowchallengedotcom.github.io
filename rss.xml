@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Marshmallow Challenge Blog</title>
+        <link>https://www.marshmallowchallenge.com/</link>
+        <description>The task is very simple: teams must construct the tallest structure by using: a few sticks of spaghetti, some tape, some string, and a single marshmallow on the top.</description>
+        <image>
+            <title>Marshmallow Challenge Blog</title>
+            <link>https://www.marshmallowchallenge.com/</link>
+            <url>https://www.marshmallowchallenge.com/assets/images/marshmallowchallenge-logo-128x128.jpg</url>
+            <height>128</height>
+            <width>128</width>
+        </image>
+        <ttl>60</ttl>
+        <pubDate>Tue, 23 Mar 2021 20:01:56 +0000</pubDate>
+        <lastBuildDate>Tue, 23 Mar 2021 21:58:49 +0000</lastBuildDate>
+        <language>en</language>
+        <atom:link href="https://www.marshmallowchallenge.com/rss.xml" rel="self" type="application/rss+xml"/>
+
+    </channel>
+</rss>
