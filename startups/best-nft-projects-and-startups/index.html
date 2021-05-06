@@ -394,11 +394,11 @@
                   max-width: 824px;
                 }
                   }
-                  @media (min-width: 1200px) {
+                  @media (min-width: 1280px) {
                     /*** fonts */
                 h1 {
                   font-size: 48px;
-                  line-height: 56px;
+                  line-height: 52px;
                   padding-top: 20px;
                 }
                 h2, h3, h4 {
@@ -421,13 +421,14 @@
                 
                 /*** site header */
                 .site-header {
-                  max-width: 1200px;
-                  font-size: 18px;
-                  line-height: 21px;
+                  max-width: 1280px;
+                  font-size: 16px;
+                  line-height: 19px;
+                  padding: 12px;
                 }
                 .site-navigation {
-                  font-size: 18px;
-                  line-height: 21px;
+                  font-size: 16px;
+                  line-height: 19px;
                 }
                 .site-navigation nav li {
                   padding-left: 16px;
@@ -435,14 +436,14 @@
                 
                 /*** main content */
                 .main-content-outer {
+                  max-width: 1280px;
                   display: flex;
                   flex-wrap: wrap;
-                  max-width: 1200px;
                   margin: 0 auto;
                 }
                 .main-content {
-                    width: 700px;
-                    padding: 24px 12px;
+                    width: 624px;
+                    padding: 12px;
                 }
                 .post-body-outer {
                   margin-top: 24px;
@@ -466,18 +467,25 @@
                 .toc {
                   display: unset;
                   position: sticky;
-                  top: 0;
+                  top: 44px;
                   align-self: flex-start;
-                  width: 250px;
-                  padding: 24px 12px;
+                  width: 324px;
+                  padding: 12px;
+                }
+                .toc h3 {
+                  font-size: 14px;
+                  line-height: 16px;
+                  color: #333333;
+                  font-weight: bold;
+                  margin-top: unset;
+                  margin-bottom: 8px;
                 }
                 .toc li {
-                  font-size: 14px;
-                  line-height: 26px;
+                  font-size: 13px;
+                  line-height: 16px;
                   list-style: none;
                   overflow: hidden;
-                  text-overflow: ellipsis;
-                  white-space: nowrap;
+                  padding: 4px 0;
                 }
                 .toc li a {
                   text-decoration: none;
@@ -486,30 +494,38 @@
                   font-weight: bold;
                   border-left: 3px solid #007aff;
                 }
+                .toc li.selected a {
+                  color: #007aff;
+                }
                 .toc li.h1 {
-                  padding-left: 5px;
+                  padding-left: 8px;
                 }
                 .toc li.h1.selected {
-                  padding-left: 2px;
+                  padding-left: 5px;
                 }
                 .toc li.h2 {
-                  padding-left: 12px;
+                  padding-left: 15px;
                 }
                 .toc li.h2.selected {
-                  padding-left: 9px;
+                  padding-left: 12px;
                 }
                 .toc li.h3 {
-                  padding-left: 24px;
+                  padding-left: 27px;
                 }
                 .toc li.h3.selected {
-                  padding-left: 21px;
+                  padding-left: 24px;
                 }
                 .post-items {
-                  width: 250px;
-                  padding: 24px 12px;
+                  width: 332px;
+                  padding: 12px;
                 }
                 .post-items h3 {
-                  margin-top: 48px;
+                  font-size: 14px;
+                  line-height: 16px;
+                  color: #333333;
+                  font-weight: bold;
+                  margin-top: unset;
+                  margin-bottom: 8px;
                 }
                 .top-post-item {
                   padding: 24px 0;
@@ -519,9 +535,15 @@
                 }
                 .top-post-item .description h4 {
                   margin: 0;
-                  font-size: 14px;
-                  line-height: 22px;
+                  font-size: 13px;
+                  line-height: 16px;
                   padding: 0;
+                  padding-bottom: 4px;
+                }
+                .top-post-item .description p {
+                  margin: 0;
+                  font-size: 12px;
+                  line-height: 15px;
                 }
                 
                 /*** images */
@@ -532,7 +554,7 @@
                   margin: 32px auto;
                 }
                 .featured img {
-                  height: 417px;
+                  height: 370.5px;
                 }
                 .full-width-figure figcaption,
                 .simple-img figcaption {
@@ -541,9 +563,9 @@
                 
                 /*** site footer */
                 .site-footer {
+                  max-width: 1280px;
                   padding: 64px 12px 32px 12px;
                   font-size: 14px;
-                  max-width: 1200px;
                 }
                   }
             </style>
@@ -674,6 +696,8 @@
             </div>
             <div class="main-content-outer">
                 <nav class="toc">
+                     <h3>Table of contents</h3>
+
                     <ul>
                         <li class="h1"><a href="#best-nft-projects-and-startups">Best NFT Projects and Startups</a>
                         </li>
@@ -685,7 +709,7 @@
                         </li>
                         <li class="h2"><a href="#why-do-people-buy-nfts">Why do People buy NFTs?</a>
                         </li>
-                        <li class="h2"><a href="#the-current-state-of-nfts">The Current State of NFTs</a>
+                        <li class="h2"><a href="#the-current-state-of-nfts">The current state of NFTs</a>
                         </li>
                         <li class="h2"><a href="#best-nft-startups">Best NFT startups</a>
                         </li>
@@ -831,7 +855,7 @@
                                         plain speculation. However, there are few other <a href="https://washingtonindependent.com/nft/#reasons-to-buy-nft">reasons to buy NFTs</a>;
                                         they’re unique and can represent the commercial copyright of an asset.</p>
                                     <h2
-                                    id="the-current-state-of-nfts">The Current State of NFTs</h2>
+                                    id="the-current-state-of-nfts">The current state of NFTs</h2>
                                         <p>In 2017, the most evident proof of concept NFT project was, at first glance,
                                             a simple concept of some breed-able <strong>collectibles</strong> called
                                             Cryptokitties. By the end of 2017, even such a <strong>simple NFT project</strong> was
