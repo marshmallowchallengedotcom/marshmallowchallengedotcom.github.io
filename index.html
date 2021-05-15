@@ -395,26 +395,28 @@
               @media (min-width: 1280px) {
                 /*** fonts */
             h1 {
-              font-size: 36px;
-              line-height: 42px;
+              font-size: 42px;
+              line-height: 50px;
             }
             h2, h3, h4 {
-              margin-bottom: 30px;
-              margin-top: 60px;
+              margin-bottom: 24px;
+              margin-top: 48px;
             }
             h2 {
               font-size: 28px;
-              line-height: 33px;
+              line-height: 36px;
             }
             h3 {
               font-size: 24px;
-              line-height: 26px;
+              line-height: 30px;
             }
             h4 {
               font-size: 20px;
-              line-height: 23px;
+              line-height: 28px;
             }
             p {
+              font-size: 20px;
+              line-height: 32px;
               margin-top: 32px;
               margin-bottom: 32px;
             }
@@ -456,8 +458,8 @@
               margin-right: 16px;
             }
             .post-body ul li {
-              font-size: 16px;
-              line-height: 24px;
+              font-size: 17px;
+              line-height: 28px;
               margin-bottom: 16px;
             }
             
@@ -631,7 +633,55 @@
                 </header>
             </div>
             <div class="main-content-outer">
-                <nav class="toc"></nav>
+                <nav class="toc">
+                     <h3>Table of contents</h3>
+
+                    <ul>
+                        <li class="h1"><a href="#marshmallow-challenge">Marshmallow Challenge</a>
+                        </li>
+                        <li class="h2"><a href="#who-performs-poorly">Who Performs Poorly</a>
+                        </li>
+                        <li class="h2"><a href="#who-performs-well">Who Performs Well</a>
+                        </li>
+                        <li class="h2"><a href="#what-can-we-learn-from-this">What Can We Learn From This</a>
+                        </li>
+                        <li class="h2"><a href="#just-give-it-a-try">Just Give It A Try</a>
+                        </li>
+                    </ul>
+                </nav>
+                <script>
+                    window.addEventListener('DOMContentLoaded', () => {
+                      const observer = new IntersectionObserver(entries => {
+                        entries.forEach(entry => {
+                          const id = entry.target.getAttribute('id');
+                          const elements = document.querySelector(`nav ul li a[href="#${id}"]`);
+                          if (entry.intersectionRatio > 0) {
+                            elements.parentElement.classList.add('selected');
+                          } else {
+                            elements.parentElement.classList.remove('selected');
+                          }
+                        });
+                      });
+                    
+                      const articles = document.querySelectorAll('article[id]');
+                      if(articles) {
+                        articles.forEach((section) => { observer.observe(section); });
+                      }
+                    
+                      const h1s = document.querySelectorAll('h1[id]');
+                      if(h1s) {
+                        h1s.forEach((section) => { observer.observe(section); });
+                      }
+                      const h2s = document.querySelectorAll('h2[id]');
+                      if(h2s) {
+                        h2s.forEach((section) => { observer.observe(section); });
+                      }
+                      const h3s = document.querySelectorAll('h3[id]');
+                      if(h3s) {
+                        h3s.forEach((section) => { observer.observe(section); });
+                      }
+                    });
+                </script>
                 <main class="main-content">
                     <article>
                         <!-- PAGE HEADER START -->
@@ -646,16 +696,11 @@
                         <div class="post-body-outer">
                             <div class="post-body">
                                 <div class="post-body-inner">
-                                    <p>The <strong>marshmallow challenge</strong> is a simple, exciting, and instructive
-                                        design activity that promotes and teaches valuable lessons in <strong>collaboration, innovation, and creativity</strong> among
-                                        team members or groups.</p>
-                                    <p>In 18 minutes, each can use one yard of tape, one marshmallow, 20 sticks
-                                        of spaghetti, and one yard of string to <strong>build the tallest free-standing structure</strong> with
-                                        the marshmallow on the top.</p>
-                                    <p>Just check out <a href="https://www.marshmallowchallenge.com/instructions/"
-                                        onclick="linkGtag('navigate_index_to_instructions', 'https://www.marshmallowchallenge.com/instructions/'); return false;"><strong class="important-span">how to run the marshmallow challenge</strong></a>
-for
-                                        detailed instructions.</p>
+                                    <p>The <strong>marshmallow challenge</strong> is a simple <strong>design exercise</strong> for
+                                        small groups.</p>
+                                    <p>It requires essential skills <strong>kindergarten</strong> students naturally
+                                        have, and <strong>business school</strong> students have <strong>forgotten</strong>.</p>
+                                    <p>It teaches valuable lessons on <strong>creativity and innovation</strong>.</p>
                                     <aside>
                                         <figure class="full-width-figure  featured">
                                             <picture>
@@ -681,15 +726,48 @@ for
                                             </figcaption>
                                         </figure>
                                     </aside>
-                                    <p>The teams’ performance at the end of the exercise reveals some very <strong>fascinating lessons</strong>.
-                                        What teams perform better, why, and why was the winning team so good? What
-                                        team underperforms? Why did some other teams perform so poorly?</p>
-                                    <p>If you need to get your team thinking <strong>outside the box</strong>,
-                                        encourage them to <strong>brainstorm</strong> about a new idea, as an <strong>ice-breaker</strong> for
-                                        new teams, or simply you want to boost <strong>team spirit, innovation, and creativity</strong>,
-                                        have them partake in the 18-minute long marshmallow challenge.</p>
-                                    <p>The challenge was invented by Peter Skillman of Palm, Inc. and popularized
-                                        by Tom Wujec of Autodesk.</p>
+                                    <p>The <strong>rules are easy</strong>; in 18 minutes, each group can use
+                                        20 sticks of spaghetti, one yard of tape, and one yard of string, and one
+                                        marshmallow to <strong>build the tallest structure</strong> with the marshmallow
+                                        on the top.</p>
+                                    <p>The teams’ performance at the end of the exercise reveals some <strong>exciting lessons</strong>.</p>
+                                    <h2
+                                    id="who-performs-poorly">Who Performs Poorly</h2>
+                                        <p><strong>Business school</strong> graduates tend to perform worse than other
+                                            teams.</p>
+                                        <p>They try to come up with a <strong>single plan</strong> wasting most of
+                                            their time.</p>
+                                        <p>In the end, they <strong>run out of time</strong> and rush through their
+                                            plan. As a result, the structure collapses.</p>
+                                        
+<h2 id="who-performs-well">Who Performs Well</h2>
+
+                                        <p><strong>Kindergarten students</strong> have excellent natural skills to
+                                            solve the problem.</p>
+                                        <p>They don’t plan. They just <strong>build and build</strong>.</p>
+                                        <p>During their time, they come up with <strong>multiple designs</strong>.
+                                            Many of the attempts collapse, but they <strong>learn</strong> about the
+                                            problem and <strong>improve</strong> the solution.</p>
+                                        
+<h2 id="what-can-we-learn-from-this">What Can We Learn From This</h2>
+
+                                        <p>The exercise highlights the importance of <strong>prototyping and iterative design</strong>.</p>
+                                        <p>The marshmallow is much heavier than most people <strong>think</strong>.</p>
+                                        <p>Teams who attempt to put their marshmallow on the top at the last minute, <strong>assuming</strong> it’s
+                                            light, usually see their structure collapse.</p>
+                                        <p>The marshmallow represents a <strong>false assumption that can remain hidden</strong> until
+                                            the very last moment. Every project has its marshmallow, <strong>hidden challenges that nobody considers</strong>.</p>
+                                        <h2
+                                        id="just-give-it-a-try">Just Give It A Try</h2>
+                                            <p>If you need to get your team <strong>thinking</strong> outside the box or
+                                                encourage them to <strong>brainstorm</strong> about a new idea, have them
+                                                partake in the 18-minute long marshmallow challenge.</p>
+                                            <p>Just check out <a href="https://www.marshmallowchallenge.com/instructions/"
+                                                onclick="linkGtag('navigate_index_to_instructions', 'https://www.marshmallowchallenge.com/instructions/'); return false;"><strong class="important-span">how to run the marshmallow challenge</strong></a>
+for
+                                                detailed instructions.</p>
+                                            <p>The exercise was invented by Peter Skillman of Palm, Inc. and popularized
+                                                by Tom Wujec of Autodesk.</p>
                                 </div>
                             </div>
                         </div>
