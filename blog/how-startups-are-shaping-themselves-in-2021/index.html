@@ -727,7 +727,55 @@
                 </header>
             </div>
             <div class="main-content-outer">
-                <nav class="toc"></nav>
+                <nav class="toc">
+                     <h3>Table of contents</h3>
+
+                    <ul>
+                        <li class="h1"><a href="#how-startups-are-doing-in-2021">How Startups Are Doing in 2021</a>
+                        </li>
+                        <li class="h2"><a href="#the-impact-of-the-lockdowns-for-working">The impact of the lockdowns for working</a>
+                        </li>
+                        <li class="h2"><a href="#communities-are-becoming-vital-part-of-the-product">Communities are becoming vital part of the product</a>
+                        </li>
+                        <li class="h2"><a href="#focusing-on-sustainability-and-climate-change-are-essential">Focusing on sustainability and climate change are essential</a>
+                        </li>
+                        <li class="h2"><a href="#connect-connect-and-connect">Connect, connect and connect</a>
+                        </li>
+                    </ul>
+                </nav>
+                <script>
+                    window.addEventListener('DOMContentLoaded', () => {
+                      const observer = new IntersectionObserver(entries => {
+                        entries.forEach(entry => {
+                          const id = entry.target.getAttribute('id');
+                          const elements = document.querySelector(`nav ul li a[href="#${id}"]`);
+                          if (entry.intersectionRatio > 0) {
+                            elements.parentElement.classList.add('selected');
+                          } else {
+                            elements.parentElement.classList.remove('selected');
+                          }
+                        });
+                      });
+                    
+                      const articles = document.querySelectorAll('article[id]');
+                      if(articles) {
+                        articles.forEach((section) => { observer.observe(section); });
+                      }
+                    
+                      const h1s = document.querySelectorAll('h1[id]');
+                      if(h1s) {
+                        h1s.forEach((section) => { observer.observe(section); });
+                      }
+                      const h2s = document.querySelectorAll('h2[id]');
+                      if(h2s) {
+                        h2s.forEach((section) => { observer.observe(section); });
+                      }
+                      const h3s = document.querySelectorAll('h3[id]');
+                      if(h3s) {
+                        h3s.forEach((section) => { observer.observe(section); });
+                      }
+                    });
+                </script>
                 <main class="main-content">
                     <article>
                         <div class="page-header-outer">
@@ -749,14 +797,13 @@
                         <div class="post-body-outer">
                             <div class="post-body">
                                 <div class="post-body-inner">
-                                    <p>2020 created many interesting circumstances that have impacted our way
-                                        of interacting with education, employment, and daily needs, like going
-                                        to the grocery store. We’ve lost a tremendous amount this past year, as
-                                        individuals and as a society of people. We have also learned so many new
-                                        ideas about connecting despite the need to socially distance ourselves
-                                        from each other. We all faced this issue to be more innovative and create
-                                        a world where we don’t need to do things traditionally to have a high-quality
-                                        life.</p>
+                                    <p>We’ve lost a tremendous amount this past year, as individuals and as a
+                                        society of people. 2020 created many <strong>interesting circumstances</strong> that
+                                        have impacted our <strong>way of interacting</strong> with education, employment,
+                                        and daily needs, like going to the grocery store. We have also learned
+                                        so many new ideas about <strong>connecting</strong> despite the need to distance
+                                        ourselves from each other. We all faced this issue with being more innovative
+                                        and creating a world where we don’t need to do things traditionally <strong>to have a high-quality</strong> life.</p>
                                     <aside>
                                         <figure class="full-width-figure  featured">
                                             <picture>
@@ -782,38 +829,45 @@
                                             </figcaption>
                                         </figure>
                                     </aside>
-                                    <p>This new way to interact with each other has also impacted how startup
-                                        companies are choosing to do business. Digital transformation has been
-                                        one of the few positive understandings that have come out of the pandemic
-                                        and the traumatic year of 2020. With so many tech companies already lining
-                                        up the ability to work remotely, quarantine and the pandemic became a great
-                                        way to test out their ability to continue to grow under extreme circumstances.</p>
-                                    <p>Before, companies and businesses had more room to not rush into utilizing
-                                        more methods that engaged with the virtual connection. Still, now more
-                                        than ever, it has become crucial for those same spaces to adapt to not
-                                        working at the office. These new business practices of working in a virtual
-                                        environment don’t seem to be going away, even with vaccines being administered
-                                        and places opening up. What is essential for new tech companies to understand
-                                        is how much 2020 and the pandemic have impacted how new companies will
-                                        achieve their goal.</p>
-                                    <p>The trends of 2021 show us that community is vital as people don’t just
-                                        want to buy a product. They want to be a part of a more extensive experience.
-                                        Consumers want to interact and learn from each other on a platform. They
-                                        want to have the chance to learn from each other and the company that they
-                                        are connecting with. People are working remotely more than ever, so when
-                                        new tech companies create a platform that allows people to engage with
-                                        their products more interactively, it gives them a chance to form a community
-                                        and even the possibility to collaborate with other consumers.</p>
-                                    <p>It’s also crucial for new startup companies to recognize the importance
-                                        of sustainability and understand climate change in their companies’ practices.
-                                        People are more aware than ever of how we impact the environment with our
-                                        consumerism. They want to know that the company they choose to connect
-                                        with recognizes that and works to present a better way to engage with our
-                                        world. We also understand the actual value of cryptocurrency and how it
-                                        will impact the state of the economy in the next few years.</p>
-                                    <p>2021 will be a year where new companies need to learn how to engage with
-                                        connecting more people and recognize the social and political state of
-                                        the world.</p>
+                                    <p>This new way to <strong>interact with each other</strong> has also impacted
+                                        how startup companies choose to do business. Digital transformation has
+                                        been one of the few positive understandings that have come out of the lockdowns
+                                        and the traumatic year of 2020, with so many tech companies already lining
+                                        up the ability <strong>to work remotely</strong>. Quarantine and the pandemic
+                                        became a way to test their ability to continue to grow under <strong>extreme circumstances</strong>.</p>
+                                    <h2
+                                    id="the-impact-of-the-lockdowns-for-working">The impact of the lockdowns for working</h2>
+                                        <p>Before, companies and businesses <strong>had more room</strong> to not rush
+                                            into utilizing more methods that engaged with the virtual connection. Still,
+                                            now more than ever, it has become crucial for those same spaces to adapt
+                                            to <strong>not working at the office</strong>. These new business practices
+                                            of working in a virtual environment <strong>don’t seem to be going away</strong>,
+                                            even with the vaccines and places opening up. What is essential for new
+                                            tech companies to <strong>understand</strong> is how much 2020 and the pandemic
+                                            have impacted how new companies will achieve their goal.</p>
+                                        
+<h2 id="communities-are-becoming-vital-part-of-the-product">Communities are becoming vital part of the product</h2>
+
+                                        <p>The trends of 2021 show us that community is vital as <strong>people don’t just want to buy a product</strong>.
+                                            They <strong>want to be a part of a more extensive experience</strong>,
+                                            interact and learn from each other on the platform. People are working
+                                            remotely more than ever, so when new tech companies create a platform that
+                                            allows people to engage with their products more interactively. It gives
+                                            them a chance to form a community and even the possibility to <strong>collaborate with other consumers</strong>.</p>
+                                        <h2
+                                        id="focusing-on-sustainability-and-climate-change-are-essential">Focusing on sustainability and climate change are essential</h2>
+                                            <p>It’s also crucial for new startup companies to <strong>recognize the importance</strong> of
+                                                sustainability and understand climate change in their companies’ practices.
+                                                People are more aware than ever of how we impact the environment with <strong>our consumerism</strong>.
+                                                They want to know that the company they choose to connect with recognizes
+                                                that and works to present a better way to <strong>engage with our world</strong>.
+                                                We also understand the actual value of cryptocurrency and how it will impact
+                                                the state of the economy in the next few years.</p>
+                                            
+<h2 id="connect-connect-and-connect">Connect, connect and connect</h2>
+
+                                            <p>2021 will be a year where new companies need to learn how to connect more
+                                                people and recognize the social and political state of the world.</p>
                                 </div>
                             </div>
                         </div>
@@ -864,7 +918,7 @@
             />
             <div class="description">
                 <h4 class="title">7 Tips to Encourage Team Work</h4>
-                <p>The trends of 2021 show us that community is vital as people don’t just want to buy a product. They want to be a part of it.</p>
+                <p>Exceptional circumstances like the pandemic underline the vital link between effective collaboration and long-term commercial success.</p>
 
             </div>
         </div>
