@@ -196,17 +196,26 @@
                 }
                 .top-post-item {
                   display: flex;
-                  border-bottom: 1px solid #C7DFF3;
+                }
+                .post-item-outer {
+                  border-bottom: 1px dotted #C7DFF3;
                 }
                 .post-item-link {
                   text-decoration: none;
                 }
+                
                 .top-post-item .thumbnail {
                   width: 80px;
                   height: 80px;
+                  opacity: 0.80;
+                  transition: opacity 0.15s;
                 }
                 
-                .top-post-item.featured-post .title {
+                .top-post-item .thumbnail:hover {
+                  opacity: 1.0;
+                }
+                
+                .top-post-item.featured-post .category {
                   color: #007aff;
                 }
                 
@@ -356,6 +365,7 @@
                 
                 /*** post items */
                 .post-items {
+                  display: none;
                   padding: 32px 12px;
                 }
                 .top-post-item {
@@ -416,7 +426,7 @@
                   line-height: 28px;
                 }
                 p {
-                  font-size: 20px;
+                  font-size: 18px;
                   line-height: 32px;
                   margin-top: 32px;
                   margin-bottom: 32px;
@@ -516,9 +526,16 @@
                 .toc li.h3.selected {
                   padding-left: 24px;
                 }
+                
+                /*** post items */
                 .post-items {
+                  display: unset;
                   width: 330px;
                   padding: 12px;
+                  padding-left: 24px;
+                }
+                .top-post-item {
+                  padding: 0;
                 }
                 .post-items h3 {
                   font-size: 14px;
@@ -526,25 +543,32 @@
                   color: #333333;
                   font-weight: bold;
                   margin-top: unset;
-                  margin-bottom: 8px;
+                  margin-bottom: 6px;
                 }
-                .top-post-item {
-                  padding: 24px 0;
+                .post-item-outer {
+                  padding: 12px 0;
                 }
                 .top-post-item .description {
-                  margin: 0 6px;
+                  margin-left: 6px;
+                  margin-right: 0;
                 }
-                .top-post-item .description h4 {
-                  margin: 0;
-                  font-size: 13px;
-                  line-height: 16px;
-                  padding: 0;
-                  padding-bottom: 4px;
-                }
-                .top-post-item .description p {
-                  margin: 0;
+                .top-post-item .description .category {
+                  margin-bottom: 4px;
                   font-size: 12px;
+                  line-height: 14px;
+                }
+                .top-post-item .description .title {
+                  margin-bottom: 4px;
+                  font-size: 13px;
                   line-height: 15px;
+                  height: 45px;
+                  text-overflow: ellipsis;
+                }
+                .top-post-item .description .meta {
+                  font-size: 12px;
+                  line-height: 14px;
+                  margin: 0;
+                  color: #818181;
                 }
                 
                 /*** images */
@@ -592,21 +616,39 @@
                 .toc li {
                   font-size: 15px;
                 }
+                
+                /*** post items */
                 .post-items {
-                  width: 366px;
+                  width: 378px;
                   padding-left: 24px;
                 }
                 .post-items h3 {
                   font-size: 16px;
                   line-height: 17px;
                 }
-                .top-post-item .description h4 {
-                  font-size: 15px;
-                  padding-bottom: 6px;
+                .post-item-outer {
+                  padding: 12px 0;
                 }
-                .top-post-item .description p {
+                .top-post-item .description {
+                  margin-left: 6px;
+                }
+                .top-post-item .description .category {
+                  margin-bottom: 6px;
                   font-size: 14px;
+                  line-height: 15px;
+                }
+                .top-post-item .description .title {
+                  margin-bottom: 6px;
+                  font-size: 15px;
+                  line-height: 18px;
+                  height: 36px;
+                  text-overflow: ellipsis;
+                }
+                .top-post-item .description .meta {
+                  font-size: 13px;
                   line-height: 16px;
+                  margin: 0;
+                  color: #818181;
                 }
                 
                 /*** site footer */
@@ -882,97 +924,109 @@
                 </main>
                 <nav class="post-items">
                      <h3>Top posts</h3>
- <a href="https://www.marshmallowchallenge.com/startups/best-startup-companies/">
-        <div class="top-post-item featured-post">
-            <img class="thumbnail"
-                 alt="A man wearing a black shirt sitting on a chair using his laptop in a big empty room."
-                 srcset="https://www.marshmallowchallenge.com/assets/pictures/startups/best-startup-companies/man-with-laptop-alone-in-a-big-room-80x80.jpg,
-                         https://www.marshmallowchallenge.com/assets/pictures/startups/best-startup-companies/man-with-laptop-alone-in-a-big-room-160x160.jpg 2x"
-                 src="https://www.marshmallowchallenge.com/assets/pictures/startups/best-startup-companies/man-with-laptop-alone-in-a-big-room-80x80.jpg"
-            />
-            <div class="description">
-                <h4 class="title">Best Startup Companies</h4>
-                <p>The article reveals the list of the best startup companies that is attracting lot of attention, new employees and investments.</p>
 
+                    <div class="post-item-outer"> <a href="https://www.marshmallowchallenge.com/startups/best-startup-companies/">
+            <div class="top-post-item featured-post">
+                <img class="thumbnail"
+                    alt="A man wearing a black shirt sitting on a chair using his laptop in a big empty room."
+                    srcset="https://www.marshmallowchallenge.com/assets/pictures/startups/best-startup-companies/man-with-laptop-alone-in-a-big-room-80x80.jpg,
+                            https://www.marshmallowchallenge.com/assets/pictures/startups/best-startup-companies/man-with-laptop-alone-in-a-big-room-160x160.jpg 2x"
+                       src="https://www.marshmallowchallenge.com/assets/pictures/startups/best-startup-companies/man-with-laptop-alone-in-a-big-room-80x80.jpg"
+                />
+                <div class="description">
+                    <h3 class="category">STARTUPS</h3>
+                    <h4 class="title">Best Startup Companies</h4>
+                    <span class="meta">1,892 views - 5 min read</span>
+                </div>
             </div>
-        </div>
-    </a>
- <a href="https://www.marshmallowchallenge.com/startups/best-nft-projects-and-startups/">
-        <div class="top-post-item">
-            <img class="thumbnail"
-                 alt="A lot of tiny colorful pictures merged into a big single one."
-                 srcset="https://www.marshmallowchallenge.com/assets/pictures/startups/best-nft-projects-and-startups/beeple-the-first-5000-days-80x80.jpg,
-                         https://www.marshmallowchallenge.com/assets/pictures/startups/best-nft-projects-and-startups/beeple-the-first-5000-days-160x160.jpg 2x"
-                 src="https://www.marshmallowchallenge.com/assets/pictures/startups/best-nft-projects-and-startups/beeple-the-first-5000-days-80x80.jpg"
-            />
-            <div class="description">
-                <h4 class="title">Best NFT Projects and Startups</h4>
-                <p>The article will help you understand what NFTs are and learn about the most exciting NFTs startups you want to watch.</p>
+        </a>
 
+                    </div>
+                    <div class="post-item-outer"> <a href="https://www.marshmallowchallenge.com/startups/best-nft-projects-and-startups/">
+            <div class="top-post-item featured-post">
+                <img class="thumbnail"
+                     alt="A lot of tiny colorful pictures merged into a big single one."
+                     srcset="https://www.marshmallowchallenge.com/assets/pictures/startups/best-nft-projects-and-startups/beeple-the-first-5000-days-80x80.jpg,
+                            https://www.marshmallowchallenge.com/assets/pictures/startups/best-nft-projects-and-startups/beeple-the-first-5000-days-160x160.jpg 2x"
+                     src="https://www.marshmallowchallenge.com/assets/pictures/startups/best-nft-projects-and-startups/beeple-the-first-5000-days-80x80.jpg"
+                />
+                <div class="description">
+                    <h3 class="category">STARTUPS</h3>
+                    <h4 class="title">Best NFT Projects and Startups</h4>
+                    <span class="meta">1,431 views - 4 min read</span>
+                </div>
             </div>
-        </div>
-    </a>
- <a href="https://www.marshmallowchallenge.com/blog/top-sites-ranking-for-e-commerce-and-shopping-in-the-world/">
-        <div class="top-post-item">
-            <img class="thumbnail"
-                 alt="A blue road sign with 'e commerce' written on it."
-                 srcset="https://www.marshmallowchallenge.com/assets/pictures/blog/top-sites-ranking-for-e-commerce-and-shopping-in-the-world/e-commerce-sign-80x80.jpg,
-                         https://www.marshmallowchallenge.com/assets/pictures/blog/top-sites-ranking-for-e-commerce-and-shopping-in-the-world/e-commerce-sign-160x160.jpg 2x"
-                 src="https://www.marshmallowchallenge.com/assets/pictures/blog/top-sites-ranking-for-e-commerce-and-shopping-in-the-world/e-commerce-sign-80x80.jpg"
-            />
-            <div class="description">
-                <h4 class="title">Top Sites Ranking for e-Commerce and Shopping in the World</h4>
-                <p>E-commerce has grown in popularity over the last few years with more people opting to purchase various goods online. These are the top sites for e-commerce.</p>
+        </a>
 
+                    </div>
+                    <div class="post-item-outer"> <a href="https://www.marshmallowchallenge.com/blog/top-sites-ranking-for-e-commerce-and-shopping-in-the-world/">
+            <div class="top-post-item featured-post">
+                <img class="thumbnail"
+                     alt="A blue road sign with 'e commerce' written on it."
+                     srcset="https://www.marshmallowchallenge.com/assets/pictures/blog/top-sites-ranking-for-e-commerce-and-shopping-in-the-world/e-commerce-sign-80x80.jpg,
+                            https://www.marshmallowchallenge.com/assets/pictures/blog/top-sites-ranking-for-e-commerce-and-shopping-in-the-world/e-commerce-sign-160x160.jpg 2x"
+                     src="https://www.marshmallowchallenge.com/assets/pictures/blog/top-sites-ranking-for-e-commerce-and-shopping-in-the-world/e-commerce-sign-80x80.jpg"
+                />
+                <div class="description">
+                    <h3 class="category">E-COMMERCE</h3>
+                    <h4 class="title">Top Sites Ranking for e-Commerce and Shopping in the World</h4>
+                    <span class="meta">226 views - 4 min read</span>
+                </div>
             </div>
-        </div>
-    </a>
- <a href="https://www.marshmallowchallenge.com/blog/chargepoint-purchases-european-charging-software-startup/">
-        <div class="top-post-item">
-            <img class="thumbnail"
-                 alt="A car parking spot for electric vehicles. It's a white drawn car with a plug on green background."
-                 srcset="https://www.marshmallowchallenge.com/assets/pictures/blog/chargepoint-purchases-european-charging-software-startup/electric-car-charging-parking-space-80x80.jpg,
-                         https://www.marshmallowchallenge.com/assets/pictures/blog/chargepoint-purchases-european-charging-software-startup/electric-car-charging-parking-space-160x160.jpg 2x"
-                 src="https://www.marshmallowchallenge.com/assets/pictures/blog/chargepoint-purchases-european-charging-software-startup/electric-car-charging-parking-space-80x80.jpg"
-            />
-            <div class="description">
-                <h4 class="title">ChargePoint purchases European charging software startup</h4>
-                <p>ChargePoint signed an agreement to acquire a European software charging startup for 250 million euros (295 million dollars) in cash and stock.</p>
+        </a>
 
+                    </div>
+                    <div class="post-item-outer"> <a href="https://www.marshmallowchallenge.com/blog/chargepoint-purchases-european-charging-software-startup/">
+            <div class="top-post-item featured-post">
+                <img class="thumbnail"
+                     alt="A car parking spot for electric vehicles. It's a white drawn car with a plug on green background."
+                     srcset="https://www.marshmallowchallenge.com/assets/pictures/blog/chargepoint-purchases-european-charging-software-startup/electric-car-charging-parking-space-80x80.jpg,
+                            https://www.marshmallowchallenge.com/assets/pictures/blog/chargepoint-purchases-european-charging-software-startup/electric-car-charging-parking-space-160x160.jpg 2x"
+                     src="https://www.marshmallowchallenge.com/assets/pictures/blog/chargepoint-purchases-european-charging-software-startup/electric-car-charging-parking-space-80x80.jpg"
+                />
+                <div class="description">
+                    <h3 class="category">STARTUPS</h3>
+                    <h4 class="title">ChargePoint purchases European charging software startup</h4>
+                    <span class="meta">131 views - 2 min read</span>
+                </div>
             </div>
-        </div>
-    </a>
- <a href="https://www.marshmallowchallenge.com/blog/why-blogging-is-crucial-for-your-startups-growth/">
-        <div class="top-post-item">
-            <img class="thumbnail"
-                 alt="A person is typing on a laptop, and there's a plant next to it."
-                 srcset="https://www.marshmallowchallenge.com/assets/pictures/blog/why-blogging-is-crucial-for-your-startups-growth/blogging-on-a-laptop-80x80.jpg,
-                         https://www.marshmallowchallenge.com/assets/pictures/blog/why-blogging-is-crucial-for-your-startups-growth/blogging-on-a-laptop-160x160.jpg 2x"
-                 src="https://www.marshmallowchallenge.com/assets/pictures/blog/why-blogging-is-crucial-for-your-startups-growth/blogging-on-a-laptop-80x80.jpg"
-            />
-            <div class="description">
-                <h4 class="title">Why Blogging Is Crucial for Your Startup's Growth</h4>
-                <p>Blogging has played a big part in helping businesses advertise their services and products without being too pushy. Learn why it’s so vital for startups.</p>
+        </a>
 
+                    </div>
+                    <div class="post-item-outer"> <a href="https://www.marshmallowchallenge.com/blog/why-blogging-is-crucial-for-your-startups-growth/">
+            <div class="top-post-item featured-post">
+                <img class="thumbnail"
+                     alt="A person is typing on a laptop, and there's a plant next to it."
+                     srcset="https://www.marshmallowchallenge.com/assets/pictures/blog/why-blogging-is-crucial-for-your-startups-growth/blogging-on-a-laptop-80x80.jpg,
+                            https://www.marshmallowchallenge.com/assets/pictures/blog/why-blogging-is-crucial-for-your-startups-growth/blogging-on-a-laptop-160x160.jpg 2x"
+                     src="https://www.marshmallowchallenge.com/assets/pictures/blog/why-blogging-is-crucial-for-your-startups-growth/blogging-on-a-laptop-80x80.jpg"
+                />
+                <div class="description">
+                    <h3 class="category">GROWTH</h3>
+                    <h4 class="title">Why Blogging Is Crucial for Your Startup's Growth</h4>
+                    <span class="meta">381 views - 4 min read</span>
+                </div>
             </div>
-        </div>
-    </a>
- <a href="https://www.marshmallowchallenge.com/blog/7-tips-to-encourage-team-work/">
-        <div class="top-post-item">
-            <img class="thumbnail"
-                 alt="A computer screen shows an online meeting, all of the team members are shown on a small web-camera picture."
-                 srcset="https://www.marshmallowchallenge.com/assets/pictures/blog/7-tips-to-encourage-team-work/online-team-meeting-80x80.jpg,
-                         https://www.marshmallowchallenge.com/assets/pictures/blog/7-tips-to-encourage-team-work/online-team-meeting-160x160.jpg 2x"
-                 src="https://www.marshmallowchallenge.com/assets/pictures/blog/7-tips-to-encourage-team-work/online-team-meeting-80x80.jpg"
-            />
-            <div class="description">
-                <h4 class="title">7 Tips to Encourage Team Work</h4>
-                <p>Exceptional circumstances like the pandemic underline the vital link between effective collaboration and long-term commercial success.</p>
+        </a>
 
+                    </div>
+                    <div class="post-item-outer"> <a href="https://www.marshmallowchallenge.com/blog/7-tips-to-encourage-team-work/">
+            <div class="top-post-item featured-post">
+                <img class="thumbnail"
+                     alt="A computer screen shows an online meeting, all of the team members are shown on a small web-camera picture."
+                     srcset="https://www.marshmallowchallenge.com/assets/pictures/blog/7-tips-to-encourage-team-work/online-team-meeting-80x80.jpg,
+                            https://www.marshmallowchallenge.com/assets/pictures/blog/7-tips-to-encourage-team-work/online-team-meeting-160x160.jpg 2x"
+                     src="https://www.marshmallowchallenge.com/assets/pictures/blog/7-tips-to-encourage-team-work/online-team-meeting-80x80.jpg"
+                />
+                <div class="description">
+                    <h3 class="category">TEAM WORK</h3>
+                    <h4 class="title">7 Tips to Encourage Team Work</h4>
+                    <span class="meta">473 views - 4 min read</span>
+                </div>
             </div>
-        </div>
-    </a>
+        </a>
 
+                    </div>
                 </nav>
             </div>
             <aside class="site-footer-outer">
