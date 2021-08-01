@@ -71,19 +71,12 @@
                 @font-face {
                   font-family: 'Inter';
                   font-style: normal;
-                  font-weight: 600;
-                  src: url(https://www.marshmallowchallenge.com/assets/fonts/inter_600.woff) format('woff'), url(https://www.marshmallowchallenge.com/assets/fonts/inter_600.ttf) format('truetype');
-                  font-display: swap;
-                }
-                @font-face {
-                  font-family: 'Inter';
-                  font-style: normal;
                   font-weight: 700;
                   src: url(https://www.marshmallowchallenge.com/assets/fonts/inter_700.woff) format('woff'), url(https://www.marshmallowchallenge.com/assets/fonts/inter_700.ttf) format('truetype');
                   font-display: swap;
                 }
                   html {
-                	scroll-behavior: smooth;
+                  scroll-behavior: smooth;
                 }
                 body {
                   font-family: sans-serif;
@@ -93,65 +86,48 @@
                   font-family: "Inter", sans-serif;
                   letter-spacing: 0px;
                 }
-                
                 h1,
                 h2,
                 h3,
-                h4 {
-                  font-weight: 700;
-                }
-                strong {
+                h4,
+                strong,
+                .site-navigation {
                   font-weight: 700;
                 }
                 body {
+                  color: #000000;
                   background-color: #ffffff;
                 }
-                body, a {
-                  color: #000000;
-                }
-                
-                .full-width-figure figcaption a,
-                .simple-img  figcaption a,
                 a {
-                  text-decoration: underline dotted #007aff;
+                  color: #000000;
+                  text-decoration: underline dashed #007aff;
                 }
+                /*** generic custom stuff */
+                .logo-line,
                 .important-span,
                 .important-span a {
                   color: #007aff;
                 }
-                .logo-line {
-                  color: #007aff;
-                }
-                
-                /*** main content */
-                .post-body ul {
-                  list-style-position: outside;
-                  list-style: none;
-                }
-                .post-body ul li::before {
-                  color: #007aff;
-                  content: "•";
-                }
-                .post-body ul li {
-                }
-                /*** site header */
+                /*** site-header / footer*/
                 .site-header-outer {
-                    background-color: #ffffff;
-                    border-bottom: 1px solid #C7DFF3;
+                  border-bottom: 1px solid #C7DFF3;
+                }
+                .site-footer-outer {
+                    border-top: 1px solid #C7DFF3;
+                    background-color: #f8f9fa;
+                }
+                .site-header,
+                .site-footer {
+                  width: 100%;
+                  margin: 0 auto;
+                  display: flex;
+                  position: relative;
+                  justify-content: space-between;
+                  align-items: center;
                 }
                 .site-header a,
                 .site-footer a {
                   text-decoration: none;
-                }
-                .site-header {
-                    max-width: 1200px;
-                    margin: 0 auto;
-                    display: flex;
-                    position: relative;
-                    justify-content: space-between;
-                    align-items: center;
-                }
-                .site-navigation {
                 }
                 .site-navigation nav ul {
                   list-style: none;
@@ -162,28 +138,16 @@
                 .full-width-figure img,
                 .simple-img img {
                   width: 100%;
-                  background-color: #f8f9fa;
+                  height: 61.75vw;
                 }
                 .full-width-figure figcaption a,
-                .simple-img  figcaption a {
+                .simple-img figcaption a {
                   color: #818181;
                 }
-                .full-width-figure figcaption,
-                .simple-img figcaption {
+                figcaption {
                   text-align: center;
-                  margin-top: 4px;
                   font-weight: 300;
                   color: #818181;
-                }
-                .simple-img {
-                  max-width: 600px;
-                  margin: 0 auto;
-                }
-                .simple-img-container {
-                }
-                .simple-img img {
-                  width: 100%;
-                  background-color: #f8f9fa;
                 }
                 
                 /*** post items */
@@ -207,8 +171,7 @@
                 .top-post-item .thumbnail {
                   width: 80px;
                   height: 80px;
-                  opacity: 0.80;
-                  transition: opacity 0.15s;
+                  opacity: 0.85;
                 }
                 
                 .top-post-item .thumbnail:hover {
@@ -245,26 +208,7 @@
                   width: 48px;
                 }
                 .meta .author-name {
-                  font-weight: 600;
-                }
-                
-                /*** site footer */
-                .site-footer-outer {
-                    border-top: 1px solid #C7DFF3;
-                    background-color: #f8f9fa;
-                }
-                .site-footer {
-                    max-width: 1200px;
-                
-                    margin: 0 auto;
-                    display: flex;
-                    position: relative;
-                    justify-content: space-between;
-                    align-items: center;
-                }
-                .footer-logo {
-                }
-                .footer-copyright {
+                  font-weight: 700;
                 }
                 
                 .important-box p:last-child,
@@ -273,32 +217,36 @@
                     margin-bottom: 0;
                 }
                 
+                /*** main content */
+                /*** main / list */
+                .post-body ul {
+                  list-style-position: outside;
+                  list-style: none;
+                }
+                .post-body ul li::before {
+                  color: #007aff;
+                  content: "•";
+                }
+                /*** Main / Special contexts */
                 .important-box {
                     background-color: #F1F7FC;
-                    border-left: 6px solid #007aff;
-                    padding: 16px;
-                    margin-bottom: 32px;
                 }
-                
                 .light-box {
-                    background-color: #f8f9fa;
+                    background-color: #F8F9FA;
+                }
+                .important-box,
+                .light-box {
                     border-left: 6px solid #007aff;
-                    padding: 16px;
-                    margin-bottom: 32px;
                 }
                 
                   /*** fonts */
                 h1 {
-                  font-size: 30px;
-                  line-height: 36px;
-                }
-                h2, h3, h4 {
-                  margin-bottom: 22px;
-                  margin-top: 44px;
+                  font-size: 28px;
+                  line-height: 32px;
                 }
                 h2 {
-                  font-size: 26px;
-                  line-height: 32px;
+                  font-size: 25px;
+                  line-height: 30px;
                 }
                 h3 {
                   font-size: 22px;
@@ -308,18 +256,31 @@
                   font-size: 18px;
                   line-height: 20px;
                 }
-                
+                h1 {
+                  margin-bottom: 22px;
+                  margin-top: 11px;
+                }
+                h2, h3, h4 {
+                  margin-bottom: 22px;
+                  margin-top: 44px;
+                }
                 /*** site header */
                 .site-header {
                   padding: 12px 6px;
-                  font-size: 14px;
-                  line-height: 16px;
+                  font-size: 15px;
+                  line-height: 17px;
                 }
                 .site-navigation nav li {
                   padding-left: 10px;
-                  line-height: 16px;
                 }
-                
+                /*** site footer */
+                .site-footer {
+                  padding: 32px 6px 12px;
+                  font-size: 12px;
+                }
+                figcaption {
+                  margin-top: 4px;
+                }
                 /*** main content */
                 .main-content {
                     padding: 12px 6px;
@@ -363,8 +324,102 @@
                   margin: 4px 12px 0 12px;
                 }
                 
-                /*** post items */
-                .post-items {
+                /*** TOC */
+                .toc {
+                  display: none;
+                }
+                
+                /*** other post items */
+                .index-post-item:hover {
+                  background-color: #FAFAFA;
+                }
+                .index-post-item:hover .thumbnail{
+                  opacity: 1;
+                }
+                .index-post-item-link {
+                  text-decoration: none;
+                }
+                .index-post-item {
+                  display: flex;
+                  flex-flow: column;
+                  margin: 24px -6px;
+                  border-bottom: 1px solid #C7DFF3;
+                  border-top:    1px solid #C7DFF3;
+                }
+                .index-post-item .thumbnail {
+                  width: 100%;
+                  height: 120px;
+                  object-fit: cover;
+                  flex-shrink: 0;
+                }
+                
+                /** fixme this should be generic */
+                .index-post-item .thumbnail img{
+                  width: 100%;
+                  height: 100%;
+                  object-fit: cover;
+                }
+                .index-post-item .meta {
+                  padding: 12px;
+                  margin: 0;
+                  flex-wrap: wrap;
+                  justify-content: none;
+                }
+                .index-post-item .meta .category{
+                  width: 100%;
+                  font-size: 13px;
+                  line-height: 16px;
+                  margin: 0 0 8px 0;
+                  color: #007aff;
+                  text-transform: uppercase;
+                }
+                
+                .index-post-item .meta .title {
+                  width: 100%;
+                  font-size: 17px;
+                  line-height: 20px;
+                  margin: 0 0 8px 0;
+                }
+                
+                .index-post-item .meta .excerpt {
+                  width: 100%;
+                  font-size: 15px;
+                  line-height: 20px;
+                  max-height: 80px;
+                  overflow: hidden;
+                  text-overflow: ellipsis;
+                  display: inline-block;
+                  margin: 0 0 8px 0;
+                }
+                
+                .index-post-item .meta .bs {
+                  width: 100%;
+                  height: 44px;
+                  display: flex;
+                  flex-wrap: wrap;
+                  align-items: center;
+                  margin: 0;
+                }
+                
+                .index-post-item .meta .bs .author-photo {
+                  height: 40px;
+                  width: 40px;
+                }
+                
+                .index-post-item .meta .bs .author-photo img {
+                  height: 40px;
+                  width: 40px;
+                  border-radius: 50%;
+                }
+                
+                .index-post-item .meta .bs .info {
+                    display: flex;
+                    flex-wrap: wrap;
+                    flex-direction: column;
+                }
+                
+                /*** top post items */
+                .other-post-items {
                   display: none;
                   padding: 32px 12px;
                 }
@@ -373,10 +428,6 @@
                 }
                 .top-post-item .description {
                   margin: 0 12px;
-                }
-                
-                .toc {
-                  display: none;
                 }
                 /*** meta */
                 .meta {
@@ -387,11 +438,35 @@
                   margin-left: 12px;
                 }
                 
-                /*** site footer */
-                .site-footer {
-                    padding: 32px 6px 12px;
-                    font-size: 12px;
+                /*** Main / Special contexts */
+                .important-box {
+                    padding: 16px;
+                    margin-bottom: 32px;
                 }
+                .light-box {
+                    padding: 16px;
+                    margin-bottom: 32px;
+                }
+                  @media (min-width: 600px) {
+                    /*** other post items */
+                .index-post-item {
+                  flex-flow: row;
+                }
+                .index-post-item .thumbnail {
+                  width: 327px;
+                  height: 202px;
+                  opacity: .85;
+                  object-fit: unset;
+                }
+                .index-post-item .meta .title {
+                  height: 40px;
+                }
+                
+                .index-post-item .meta .excerpt {
+                  line-height: 18px;
+                  height: 54px;
+                }
+                  }
                   @media (min-width: 800px) {
                     /*** main content */
                 /*** images */
@@ -401,6 +476,10 @@
                 .main-content-outer, .site-header, .site-footer {
                   margin: 0 auto;
                   max-width: 824px;
+                }
+                .index-post-item {
+                  margin: 24px 0px;
+                  border: 1px solid #C7DFF3;
                 }
                   }
                   @media (min-width: 1280px) {
@@ -678,8 +757,10 @@
                             "@id": "https://www.marshmallowchallenge.com/#people/jordan_cox",
                             "name": "Jordan Cox"
                         }
-                    ]
-                }
+                    ],
+                    "sameAs": ["https://twitter.com/marshmallowchal"]
+            
+                        }
             </script>
             <script type="application/ld+json">
                 {
@@ -699,6 +780,14 @@
                                     {
                             "@type": "ListItem",
                             "position": 2,
+                            "name": "Blog",
+                            "item": "https://www.marshmallowchallenge.com/blog/"
+            
+                                        },
+            
+                                    {
+                            "@type": "ListItem",
+                            "position": 3,
                             "name": "Why Blogging Is Crucial for Your Startup"
                         }
                     ]
@@ -761,10 +850,10 @@
                     <div class="site-navigation">
                         <nav>
                             <ul>
-                                <li> <a href="https://www.marshmallowchallenge.com/blog/how-startups-are-shaping-themselves-in-2021/"><span>blog</span></a>
+                                <li> <a href="https://www.marshmallowchallenge.com/blog/"><span>blog</span></a>
 
                                 </li>
-                                <li> <a href="https://www.marshmallowchallenge.com/startups/best-startup-companies/"><span>startups</span></a>
+                                <li> <a href="https://www.marshmallowchallenge.com/startups/"><span>startups</span></a>
 
                                 </li>
                                 <li> <a href="https://www.marshmallowchallenge.com/about/"><span>about</span></a>
@@ -878,7 +967,9 @@
                                                 <img src="https://www.marshmallowchallenge.com/assets/pictures/blog/why-blogging-is-crucial-for-your-startups-growth/blogging-on-a-laptop-800.jpg"
                                                 alt="A person is typing on a laptop, and there's a plant next to it." />
                                             </picture>
-                                            <figcaption><span class="copyright">Photo by <a href="https://unsplash.com/@corinnekutz" rel="nofollow">Corinne Kutz</a> on <a href="https://unsplash.com/" rel="nofollow">Unsplash</a></span>
+                                            <figcaption>Photo by <a href="https://unsplash.com/@corinnekutz" rel="nofollow">Corinne Kutz</a> on
+                                                <a
+                                                href="https://unsplash.com/" rel="nofollow">Unsplash</a>
                                             </figcaption>
                                         </figure>
                                     </aside>

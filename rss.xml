@@ -7,13 +7,13 @@
         <image>
             <title>Marshmallow Challenge Blog</title>
             <link>https://www.marshmallowchallenge.com/</link>
-            <url>https://www.marshmallowchallenge.com/assets/images/marshmallowchallenge-logo-128x128.jpg</url>
+            <url>https://www.marshmallowchallenge.com/assets/images/marshmallowchallenge-logo-256x256.jpg</url>
             <height>128</height>
             <width>128</width>
         </image>
         <ttl>60</ttl>
         <pubDate>Tue, 23 Mar 2021 20:01:56 +0000</pubDate>
-        <lastBuildDate>Fri, 23 Jul 2021 20:55:40 +0100</lastBuildDate>
+        <lastBuildDate>Sun, 01 Aug 2021 16:24:37 +0100</lastBuildDate>
         <language>en</language>
         <atom:link href="https://www.marshmallowchallenge.com/rss.xml" rel="self" type="application/rss+xml"/>
 

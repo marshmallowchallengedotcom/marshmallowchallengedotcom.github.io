@@ -16,10 +16,9 @@ if (!sessionStorage.fontsLoaded) {
 
   var inter300 = new FontFaceObserver('Inter', { weight: 300, style: 'normal' }).load(null, 10000);
   var inter400 = new FontFaceObserver('Inter', { weight: 400, style: 'normal' }).load(null, 10000);
-  var inter600 = new FontFaceObserver('Inter', { weight: 600, style: 'normal' }).load(null, 10000);
   var inter700 = new FontFaceObserver('Inter', { weight: 700, style: 'normal' }).load(null, 10000);
 
-  Promise.all([inter300, inter400, inter600, inter700]).then(function () {
+  Promise.all([inter300, inter400, inter700]).then(function () {
     sessionStorage.fontsLoaded = true;
     var html = document.documentElement;
     html.classList.add("fonts-loaded");
