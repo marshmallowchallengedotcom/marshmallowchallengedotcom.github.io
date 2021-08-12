@@ -2,42 +2,42 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
         <loc>https://www.marshmallowchallenge.com/</loc>
-        <lastmod>2021-07-23</lastmod>
+        <lastmod>2021-08-12</lastmod>
         <changefreq>daily</changefreq>
     </url>
     <url>
         <loc>https://www.marshmallowchallenge.com/about/</loc>
-        <lastmod>2021-07-23</lastmod>
+        <lastmod>2021-08-12</lastmod>
         <changefreq>daily</changefreq>
     </url>
     <url>
         <loc>https://www.marshmallowchallenge.com/instructions/</loc>
-        <lastmod>2021-07-23</lastmod>
+        <lastmod>2021-08-12</lastmod>
         <changefreq>daily</changefreq>
     </url>
     <url>
         <loc>https://www.marshmallowchallenge.com/startups/</loc>
-        <lastmod>2021-08-01</lastmod>
+        <lastmod>2021-08-12</lastmod>
         <changefreq>daily</changefreq>
     </url>
     <url>
         <loc>https://www.marshmallowchallenge.com/blog/</loc>
-        <lastmod>2021-08-01</lastmod>
+        <lastmod>2021-08-12</lastmod>
         <changefreq>daily</changefreq>
     </url>
     <url>
         <loc>https://www.marshmallowchallenge.com/startups/best-startup-companies/</loc>
-        <lastmod>2021-07-23</lastmod>
+        <lastmod>2021-08-12</lastmod>
         <changefreq>daily</changefreq>
     </url>
     <url>
         <loc>https://www.marshmallowchallenge.com/blog/how-startups-are-shaping-themselves-in-2021/</loc>
-        <lastmod>2021-07-23</lastmod>
+        <lastmod>2021-08-12</lastmod>
         <changefreq>daily</changefreq>
     </url>
     <url>
         <loc>https://www.marshmallowchallenge.com/startups/best-nft-projects-and-startups/</loc>
-        <lastmod>2021-07-23</lastmod>
+        <lastmod>2021-08-12</lastmod>
         <changefreq>daily</changefreq>
     </url>
     <url>
@@ -63,6 +63,11 @@
     <url>
         <loc>https://www.marshmallowchallenge.com/blog/zebra-raises-1-million-in-pre-seed-round/</loc>
         <lastmod>2021-07-22</lastmod>
+        <changefreq>daily</changefreq>
+    </url>
+    <url>
+        <loc>https://www.marshmallowchallenge.com/blog/best-agile-books/</loc>
+        <lastmod>2021-08-12</lastmod>
         <changefreq>daily</changefreq>
     </url>
 </urlset>
