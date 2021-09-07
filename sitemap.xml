@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
         <loc>https://www.marshmallowchallenge.com/</loc>
-        <lastmod>2021-09-06</lastmod>
+        <lastmod>2021-08-12</lastmod>
         <changefreq>daily</changefreq>
     </url>
     <url>
@@ -47,7 +47,7 @@
     </url>
     <url>
         <loc>https://www.marshmallowchallenge.com/blog/</loc>
-        <lastmod>2021-08-17</lastmod>
+        <lastmod>2021-09-07</lastmod>
         <changefreq>daily</changefreq>
     </url>
     <url>
@@ -93,6 +93,11 @@
     <url>
         <loc>https://www.marshmallowchallenge.com/blog/best-agile-books/</loc>
         <lastmod>2021-08-12</lastmod>
+        <changefreq>daily</changefreq>
+    </url>
+    <url>
+        <loc>https://www.marshmallowchallenge.com/blog/ledgy-the-european-startup-equity-management-tool/</loc>
+        <lastmod>2021-09-07</lastmod>
         <changefreq>daily</changefreq>
     </url>
 </urlset>
