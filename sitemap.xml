@@ -47,7 +47,7 @@
     </url>
     <url>
         <loc>https://www.marshmallowchallenge.com/blog/</loc>
-        <lastmod>2021-09-07</lastmod>
+        <lastmod>2021-09-17</lastmod>
         <changefreq>daily</changefreq>
     </url>
     <url>
@@ -103,6 +103,11 @@
     <url>
         <loc>https://www.marshmallowchallenge.com/blog/how-to-create-good-teams/</loc>
         <lastmod>2021-09-14</lastmod>
+        <changefreq>daily</changefreq>
+    </url>
+    <url>
+        <loc>https://www.marshmallowchallenge.com/blog/why-online-businesses-should-accept-mobile-payments/</loc>
+        <lastmod>2021-09-17</lastmod>
         <changefreq>daily</changefreq>
     </url>
 </urlset>
