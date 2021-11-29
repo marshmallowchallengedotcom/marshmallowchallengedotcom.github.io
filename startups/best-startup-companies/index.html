@@ -909,10 +909,12 @@
                         entries.forEach(entry => {
                           const id = entry.target.getAttribute('id');
                           const elements = document.querySelector(`nav ul li a[href="#${id}"]`);
-                          if (entry.intersectionRatio > 0) {
-                            elements.parentElement.classList.add('selected');
-                          } else {
-                            elements.parentElement.classList.remove('selected');
+                          if (elements) {
+                              if (entry.intersectionRatio > 0) {
+                                elements.parentElement.classList.add('selected');
+                              } else {
+                                elements.parentElement.classList.remove('selected');
+                              }
                           }
                         });
                       });
@@ -1017,20 +1019,20 @@
                                         <figure class="full-width-figure ">
                                             <picture>
                                                 <source type="image/webp" srcset="
-              https://www.marshmallowchallenge.com/assets/pictures/startups/best-startup-companies/man-with-laptop-alone-in-a-big-room-800.webp 800w,
-              https://www.marshmallowchallenge.com/assets/pictures/startups/best-startup-companies/man-with-laptop-alone-in-a-big-room-1200.webp 1200w,
-              https://www.marshmallowchallenge.com/assets/pictures/startups/best-startup-companies/man-with-laptop-alone-in-a-big-room-1600.webp 1600w"
+              https://www.marshmallowchallenge.com/assets/pictures/startups/best-startup-companies/helpdesk-header-image-800.webp 800w,
+              https://www.marshmallowchallenge.com/assets/pictures/startups/best-startup-companies/helpdesk-header-image-1200.webp 1200w,
+              https://www.marshmallowchallenge.com/assets/pictures/startups/best-startup-companies/helpdesk-header-image-1600.webp 1600w"
                                                 sizes="
               (max-width: 800px) 100vw,
               800px" />
                                                 <source type="image/jpeg" srcset="
-              https://www.marshmallowchallenge.com/assets/pictures/startups/best-startup-companies/man-with-laptop-alone-in-a-big-room-800.jpg 800w,
-              https://www.marshmallowchallenge.com/assets/pictures/startups/best-startup-companies/man-with-laptop-alone-in-a-big-room-1200.jpg 1200w,
-              https://www.marshmallowchallenge.com/assets/pictures/startups/best-startup-companies/man-with-laptop-alone-in-a-big-room-1600.jpg 1600w"
+              https://www.marshmallowchallenge.com/assets/pictures/startups/best-startup-companies/helpdesk-header-image-800.jpg 800w,
+              https://www.marshmallowchallenge.com/assets/pictures/startups/best-startup-companies/helpdesk-header-image-1200.jpg 1200w,
+              https://www.marshmallowchallenge.com/assets/pictures/startups/best-startup-companies/helpdesk-header-image-1600.jpg 1600w"
                                                 sizes="
               (max-width: 800px) 100vw,
               800px" />
-                                                <img loading="lazy" src="https://www.marshmallowchallenge.com/assets/pictures/startups/best-startup-companies/man-with-laptop-alone-in-a-big-room-800.jpg"
+                                                <img loading="lazy" src="https://www.marshmallowchallenge.com/assets/pictures/startups/best-startup-companies/helpdesk-header-image-800.jpg"
                                                 alt="A drawing version of a computer screen where human users ask question, and the AI bots answering it."
                                                 />
                                             </picture>
@@ -1066,20 +1068,20 @@
                                         <figure class="full-width-figure ">
                                             <picture>
                                                 <source type="image/webp" srcset="
-              https://www.marshmallowchallenge.com/assets/pictures/startups/best-startup-companies/man-with-laptop-alone-in-a-big-room-800.webp 800w,
-              https://www.marshmallowchallenge.com/assets/pictures/startups/best-startup-companies/man-with-laptop-alone-in-a-big-room-1200.webp 1200w,
-              https://www.marshmallowchallenge.com/assets/pictures/startups/best-startup-companies/man-with-laptop-alone-in-a-big-room-1600.webp 1600w"
+              https://www.marshmallowchallenge.com/assets/pictures/startups/best-startup-companies/streem-demo-800.webp 800w,
+              https://www.marshmallowchallenge.com/assets/pictures/startups/best-startup-companies/streem-demo-1200.webp 1200w,
+              https://www.marshmallowchallenge.com/assets/pictures/startups/best-startup-companies/streem-demo-1600.webp 1600w"
                                                 sizes="
               (max-width: 800px) 100vw,
               800px" />
                                                 <source type="image/jpeg" srcset="
-              https://www.marshmallowchallenge.com/assets/pictures/startups/best-startup-companies/man-with-laptop-alone-in-a-big-room-800.jpg 800w,
-              https://www.marshmallowchallenge.com/assets/pictures/startups/best-startup-companies/man-with-laptop-alone-in-a-big-room-1200.jpg 1200w,
-              https://www.marshmallowchallenge.com/assets/pictures/startups/best-startup-companies/man-with-laptop-alone-in-a-big-room-1600.jpg 1600w"
+              https://www.marshmallowchallenge.com/assets/pictures/startups/best-startup-companies/streem-demo-800.jpg 800w,
+              https://www.marshmallowchallenge.com/assets/pictures/startups/best-startup-companies/streem-demo-1200.jpg 1200w,
+              https://www.marshmallowchallenge.com/assets/pictures/startups/best-startup-companies/streem-demo-1600.jpg 1600w"
                                                 sizes="
               (max-width: 800px) 100vw,
               800px" />
-                                                <img loading="lazy" src="https://www.marshmallowchallenge.com/assets/pictures/startups/best-startup-companies/man-with-laptop-alone-in-a-big-room-800.jpg"
+                                                <img loading="lazy" src="https://www.marshmallowchallenge.com/assets/pictures/startups/best-startup-companies/streem-demo-800.jpg"
                                                 alt="A user is holding a tablet in the kitchen, the camera recording the view and adds interactive controls to objects."
                                                 />
                                             </picture>
@@ -1122,20 +1124,20 @@
                                         <figure class="full-width-figure ">
                                             <picture>
                                                 <source type="image/webp" srcset="
-              https://www.marshmallowchallenge.com/assets/pictures/startups/best-startup-companies/man-with-laptop-alone-in-a-big-room-800.webp 800w,
-              https://www.marshmallowchallenge.com/assets/pictures/startups/best-startup-companies/man-with-laptop-alone-in-a-big-room-1200.webp 1200w,
-              https://www.marshmallowchallenge.com/assets/pictures/startups/best-startup-companies/man-with-laptop-alone-in-a-big-room-1600.webp 1600w"
+              https://www.marshmallowchallenge.com/assets/pictures/startups/best-startup-companies/nuro-demo-800.webp 800w,
+              https://www.marshmallowchallenge.com/assets/pictures/startups/best-startup-companies/nuro-demo-1200.webp 1200w,
+              https://www.marshmallowchallenge.com/assets/pictures/startups/best-startup-companies/nuro-demo-1600.webp 1600w"
                                                 sizes="
               (max-width: 800px) 100vw,
               800px" />
                                                 <source type="image/jpeg" srcset="
-              https://www.marshmallowchallenge.com/assets/pictures/startups/best-startup-companies/man-with-laptop-alone-in-a-big-room-800.jpg 800w,
-              https://www.marshmallowchallenge.com/assets/pictures/startups/best-startup-companies/man-with-laptop-alone-in-a-big-room-1200.jpg 1200w,
-              https://www.marshmallowchallenge.com/assets/pictures/startups/best-startup-companies/man-with-laptop-alone-in-a-big-room-1600.jpg 1600w"
+              https://www.marshmallowchallenge.com/assets/pictures/startups/best-startup-companies/nuro-demo-800.jpg 800w,
+              https://www.marshmallowchallenge.com/assets/pictures/startups/best-startup-companies/nuro-demo-1200.jpg 1200w,
+              https://www.marshmallowchallenge.com/assets/pictures/startups/best-startup-companies/nuro-demo-1600.jpg 1600w"
                                                 sizes="
               (max-width: 800px) 100vw,
               800px" />
-                                                <img loading="lazy" src="https://www.marshmallowchallenge.com/assets/pictures/startups/best-startup-companies/man-with-laptop-alone-in-a-big-room-800.jpg"
+                                                <img loading="lazy" src="https://www.marshmallowchallenge.com/assets/pictures/startups/best-startup-companies/nuro-demo-800.jpg"
                                                 alt="A child is unloading groceries from a small electronic vehicle." />
                                             </picture>
                                             <figcaption>Picture from <a href="https://nuro.ai/" rel="nofollow">Nuro</a> website</figcaption>
@@ -1171,20 +1173,20 @@
                                         <figure class="full-width-figure ">
                                             <picture>
                                                 <source type="image/webp" srcset="
-              https://www.marshmallowchallenge.com/assets/pictures/startups/best-startup-companies/man-with-laptop-alone-in-a-big-room-800.webp 800w,
-              https://www.marshmallowchallenge.com/assets/pictures/startups/best-startup-companies/man-with-laptop-alone-in-a-big-room-1200.webp 1200w,
-              https://www.marshmallowchallenge.com/assets/pictures/startups/best-startup-companies/man-with-laptop-alone-in-a-big-room-1600.webp 1600w"
+              https://www.marshmallowchallenge.com/assets/pictures/startups/best-startup-companies/seamless-ai-demo-800.webp 800w,
+              https://www.marshmallowchallenge.com/assets/pictures/startups/best-startup-companies/seamless-ai-demo-1200.webp 1200w,
+              https://www.marshmallowchallenge.com/assets/pictures/startups/best-startup-companies/seamless-ai-demo-1600.webp 1600w"
                                                 sizes="
               (max-width: 800px) 100vw,
               800px" />
                                                 <source type="image/jpeg" srcset="
-              https://www.marshmallowchallenge.com/assets/pictures/startups/best-startup-companies/man-with-laptop-alone-in-a-big-room-800.jpg 800w,
-              https://www.marshmallowchallenge.com/assets/pictures/startups/best-startup-companies/man-with-laptop-alone-in-a-big-room-1200.jpg 1200w,
-              https://www.marshmallowchallenge.com/assets/pictures/startups/best-startup-companies/man-with-laptop-alone-in-a-big-room-1600.jpg 1600w"
+              https://www.marshmallowchallenge.com/assets/pictures/startups/best-startup-companies/seamless-ai-demo-800.jpg 800w,
+              https://www.marshmallowchallenge.com/assets/pictures/startups/best-startup-companies/seamless-ai-demo-1200.jpg 1200w,
+              https://www.marshmallowchallenge.com/assets/pictures/startups/best-startup-companies/seamless-ai-demo-1600.jpg 1600w"
                                                 sizes="
               (max-width: 800px) 100vw,
               800px" />
-                                                <img loading="lazy" src="https://www.marshmallowchallenge.com/assets/pictures/startups/best-startup-companies/man-with-laptop-alone-in-a-big-room-800.jpg"
+                                                <img loading="lazy" src="https://www.marshmallowchallenge.com/assets/pictures/startups/best-startup-companies/seamless-ai-demo-800.jpg"
                                                 alt="A drawing version of a computer screen, filled with human readable questions, and the seamless tool is returning the answers."
                                                 />
                                             </picture>
@@ -1223,20 +1225,20 @@
                                         <figure class="full-width-figure ">
                                             <picture>
                                                 <source type="image/webp" srcset="
-              https://www.marshmallowchallenge.com/assets/pictures/startups/best-startup-companies/man-with-laptop-alone-in-a-big-room-800.webp 800w,
-              https://www.marshmallowchallenge.com/assets/pictures/startups/best-startup-companies/man-with-laptop-alone-in-a-big-room-1200.webp 1200w,
-              https://www.marshmallowchallenge.com/assets/pictures/startups/best-startup-companies/man-with-laptop-alone-in-a-big-room-1600.webp 1600w"
+              https://www.marshmallowchallenge.com/assets/pictures/startups/best-startup-companies/neuroflow-demo-800.webp 800w,
+              https://www.marshmallowchallenge.com/assets/pictures/startups/best-startup-companies/neuroflow-demo-1200.webp 1200w,
+              https://www.marshmallowchallenge.com/assets/pictures/startups/best-startup-companies/neuroflow-demo-1600.webp 1600w"
                                                 sizes="
               (max-width: 800px) 100vw,
               800px" />
                                                 <source type="image/jpeg" srcset="
-              https://www.marshmallowchallenge.com/assets/pictures/startups/best-startup-companies/man-with-laptop-alone-in-a-big-room-800.jpg 800w,
-              https://www.marshmallowchallenge.com/assets/pictures/startups/best-startup-companies/man-with-laptop-alone-in-a-big-room-1200.jpg 1200w,
-              https://www.marshmallowchallenge.com/assets/pictures/startups/best-startup-companies/man-with-laptop-alone-in-a-big-room-1600.jpg 1600w"
+              https://www.marshmallowchallenge.com/assets/pictures/startups/best-startup-companies/neuroflow-demo-800.jpg 800w,
+              https://www.marshmallowchallenge.com/assets/pictures/startups/best-startup-companies/neuroflow-demo-1200.jpg 1200w,
+              https://www.marshmallowchallenge.com/assets/pictures/startups/best-startup-companies/neuroflow-demo-1600.jpg 1600w"
                                                 sizes="
               (max-width: 800px) 100vw,
               800px" />
-                                                <img loading="lazy" src="https://www.marshmallowchallenge.com/assets/pictures/startups/best-startup-companies/man-with-laptop-alone-in-a-big-room-800.jpg"
+                                                <img loading="lazy" src="https://www.marshmallowchallenge.com/assets/pictures/startups/best-startup-companies/neuroflow-demo-800.jpg"
                                                 alt="3 pictures of mobile phone screens, first one welcomes the user, the second one allows the user to record its mood, and the third one shows colorful achievement screen for congratulating the user to use the software."
                                                 />
                                             </picture>
@@ -1529,7 +1531,8 @@
                         <span
                         style="font-weight: 700" class="logo-line">|</span>
                     </div>
-                    <div class="footer-copyright"> <span><a href="https://www.marshmallowchallenge.com/sitemap.xml">sitemap</a></span> | <span><a href="mailto:info@marshmallowchallenge.com">email</a></span> | <span><a href="https://twitter.com/@marshmallowchal">twitter</a></span>
+                    <div class="footer-copyright"> <span><a href="https://www.marshmallowchallenge.com/sitemap.xml">sitemap</a></span> | <span><a href="mailto:info@marshmallowchallenge.com">email</a></span>
+| <span><a href="https://twitter.com/@marshmallowchal">twitter</a></span>
 
                     </div>
                 </footer>

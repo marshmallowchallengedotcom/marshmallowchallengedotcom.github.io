@@ -6,13 +6,13 @@
         <meta name="viewport" content="width=device-width">
         <title>Marshmallow Test | Marshmallow Challenge Blog</title>
         <meta name="description"
-        content="When it comes to confident children's ability to defer pleasure, it appears that affluence rather than willpower is responsible.">
+        content="The marshmallow test is an experimental design that measures a child's ability to delay gratification and correlate it to future outcomes.">
         <link rel="icon" type="image/png" href="https://www.marshmallowchallenge.com/assets/images/favicon.png">
         <link rel="canonical" href="https://www.marshmallowchallenge.com/blog/marshmallow-test/"
         />
         <link rel="alternate" type="application/rss+xml" href="https://www.marshmallowchallenge.com/rss.xml"
         title=" Feed">
-        <meta property="og:description" content="When it comes to confident children's ability to defer pleasure, it appears that affluence rather than willpower is responsible.">
+        <meta property="og:description" content="The marshmallow test is an experimental design that measures a child's ability to delay gratification and correlate it to future outcomes.">
         <meta property="og:image" content="https://www.marshmallowchallenge.com/assets/pictures/blog/marshmallow-test/marshmallows-1200.jpg">
         <meta property="og:image:alt" content="Picture with lot of marshmallows.">
         <meta property="og:image:height" content="741">
@@ -814,7 +814,7 @@
                 "@id": "https://www.marshmallowchallenge.com/blog/marshmallow-test/",
                 "@type": "BlogPosting",
                 "headline": "Marshmallow Test",
-                "description": "When it comes to confident children's ability to defer pleasure, it appears that affluence rather than willpower is responsible.",
+                "description": "The marshmallow test is an experimental design that measures a child's ability to delay gratification and correlate it to future outcomes.",
                 "image": [{
                     "@type": "ImageObject",
                     "url": "https://www.marshmallowchallenge.com/assets/pictures/blog/marshmallow-test/marshmallows-1200x1200.jpg",
@@ -883,7 +883,57 @@
                 </header>
             </div>
             <div class="main-content-outer">
-                <nav class="toc"></nav>
+                <nav class="toc">
+                     <h3>Table of contents</h3>
+
+                    <ul>
+                        <li class="h1"><a href="#marshmallow-test">Marshmallow Test</a>
+                        </li>
+                        <li class="h2"><a href="#the-original-marshmallow-experiment">The Original Marshmallow Experiment</a>
+                        </li>
+                        <li class="h2"><a href="#follow-up-studies">Follow-Up Studies</a>
+                        </li>
+                        <li class="h2"><a href="#so-what-is-delayed-gratification">So What is Delayed Gratification?</a>
+                        </li>
+                        <li class="h2"><a href="#is-it-just-willpower">Is It Just Willpower?</a>
+                        </li>
+                    </ul>
+                </nav>
+                <script>
+                    window.addEventListener('DOMContentLoaded', () => {
+                      const observer = new IntersectionObserver(entries => {
+                        entries.forEach(entry => {
+                          const id = entry.target.getAttribute('id');
+                          const elements = document.querySelector(`nav ul li a[href="#${id}"]`);
+                          if (elements) {
+                              if (entry.intersectionRatio > 0) {
+                                elements.parentElement.classList.add('selected');
+                              } else {
+                                elements.parentElement.classList.remove('selected');
+                              }
+                          }
+                        });
+                      });
+                    
+                      const articles = document.querySelectorAll('article[id]');
+                      if(articles) {
+                        articles.forEach((section) => { observer.observe(section); });
+                      }
+                    
+                      const h1s = document.querySelectorAll('h1[id]');
+                      if(h1s) {
+                        h1s.forEach((section) => { observer.observe(section); });
+                      }
+                      const h2s = document.querySelectorAll('h2[id]');
+                      if(h2s) {
+                        h2s.forEach((section) => { observer.observe(section); });
+                      }
+                      const h3s = document.querySelectorAll('h3[id]');
+                      if(h3s) {
+                        h3s.forEach((section) => { observer.observe(section); });
+                      }
+                    });
+                </script>
                 <main class="main-content">
                     <article>
                         <div class="page-header-outer">
@@ -905,10 +955,12 @@
                         <div class="post-body-outer">
                             <div class="post-body">
                                 <div class="post-body-inner">
-                                    <p>When it comes to confident children’s ability to <strong>defer pleasure</strong>,
-                                        it appears that affluence rather than <strong>willpower</strong> is responsible.</p>
-                                    <div
-                                    id="featured-img">
+                                    <p>The <strong>marshmallow test</strong> is an experimental design that <a href="https://content.apa.org/record/1971-02138-001">measures a child’s ability to delay gratification</a>.
+                                        The child is given the option of <strong>immediately</strong> receiving a
+                                        single marshmallow <strong>or waiting some time</strong> and receiving two
+                                        marshmallows. The time a child was able to wait for measures their ability
+                                        to <strong>delay gratification</strong>.</p>
+                                    <div id="featured-img">
                                         <aside>
                                             <figure class="full-width-figure  featured">
                                                 <picture>
@@ -935,92 +987,64 @@
                                                 </figcaption>
                                             </figure>
                                         </aside>
+                                    </div>
+                                    <p>In follow-up studies, the researchers found that children who could wait
+                                        to receive the bigger reward had <a href="https://doi.apa.org/record/1991-06927-001?doi=1"><strong>better life outcomes</strong></a>,
+                                        measured by education, wealth, and other life measures.</p>
+                                    
+<h2 id="the-original-marshmallow-experiment">The Original Marshmallow Experiment</h2>
+
+                                    <p>In a 1970 paper, Walter Michel, a professor of psychology at Stanford
+                                        University, and his assistant studied <strong>delayed gratification</strong> in
+                                        children. They ran an experiment on 32 preschoolers; the kids were unaware
+                                        of each other.</p>
+                                    <p>The researchers placed a <strong>single marshmallow</strong> in front of
+                                        the children and told them they would receive an <strong>additional one</strong> if
+                                        they didn’t eat it until the researchers returned to the room.</p>
+                                    <p>The study at that time demonstrated that children could wait longer if
+                                        the extra reward was <strong>visible for them rather than just mentioning it</strong>.</p>
+                                    <h2
+                                    id="follow-up-studies">Follow-Up Studies</h2>
+                                        <p>10 years later, the original researchers contacted the children and found
+                                            an <strong>unexpected correlation</strong> between being able to delay their
+                                            gratification as preschoolers and their later <strong>achievements and statistically higher SAT scores</strong>.</p>
+                                        <p>The topic has attracted a lot of attention, so it was the subject of many
+                                            subsequent studies. One study even correlated the <a href="https://pubmed.ncbi.nlm.nih.gov/22906511/"><strong>BMI (body mass index)</strong> and the delayed gratification</a>;
+                                            people who could resist eating the marshmallow at an early age <strong>tend to have lower BMI</strong>.</p>
+                                        <p>Researchers tried to connect the children’s ability to delay eating the
+                                            marshmallow to their <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6050075/"><strong>family’s living standards</strong></a> in
+                                            recent studies. Suggesting that the marshmallow test is not an indication
+                                            for the child’s future success, youngsters whose <strong>parents are more educated and better-off</strong> seem
+                                            to have an easier time delaying satisfaction.</p>
+                                        <p>Some studies also found that modern-day children just <strong>didn’t care about receiving the additional marshmallow</strong>.
+                                            Instead, they knew their parents would buy their favorite treat after <strong>no matter what happened during the test</strong>.</p>
+                                        <h2
+                                        id="so-what-is-delayed-gratification">So What is Delayed Gratification?</h2>
+                                            <p>“<strong>Delayed gratification is the ability to postpone an immediate reward for the sake of more distant long-term gains</strong>.
+                                                Generally, delayed gratification is assessed in tasks requiring individuals
+                                                to forgo a smaller but immediate reward for the sake of receiving a larger
+                                                reward in the future.” As it was defined in the <a href="https://www.frontiersin.org/articles/10.3389/fpsyg.2019.01649/full">original study</a> from
+                                                1970.</p>
+                                            <p>Probably <strong>the most significant challenge in life</strong> is to be
+                                                able to delay gratifications if the outcome justifies it.</p>
+                                            <p>As we learn during life and experience the outcomes of our actions, the
+                                                ability to delay gratification tends to <strong>increase over life</strong>.</p>
+                                            <h2
+                                            id="is-it-just-willpower">Is It Just Willpower?</h2>
+                                                <p><strong>Willpower plays a significant part</strong> in delayed gratification;
+                                                    however, it’s <strong>not the only one</strong>.</p>
+                                                <p>When we make a decision about anything, we try to <strong>calculate the outcomes of each option</strong>.</p>
+                                                <p>In certain scenarios, we can achieve more in the future if we don’t just
+                                                    wait. Maybe we realize that it’s not worth waiting for the <strong>bigger “prize,”</strong> but <strong>we want a different prize</strong>.</p>
                                 </div>
-                                <p>One of the most well-known <strong>social-science experiments</strong> is
-                                    the marshmallow experiment:</p>
-                                <ul>
-                                    <li>If the child manages to spend 15 minutes <strong>without eating the first marshmallow</strong>,
-                                        then she’ll be allowed to <strong>have a second one</strong>.</li>
-                                    <li>In the long run, it’s said that if she’s patient enough to double her
-                                        reward, she’ll be able to persevere through school and eventually work.</li>
-                                    <li>Many see passing the test as a <strong>positive indicator for the future</strong>.</li>
-                                </ul>
-                                <p>They recreated the <a href="https://en.wikipedia.org/wiki/Stanford_marshmallow_experiment">classic marshmallow test</a>,
-                                    which was designed by <strong>Stanford psychologist</strong> Walter Mischel
-                                    in the 1960s, with the help of Tyler Watts and Greg Duncan and Haonan Quan
-                                    of UC Irvine. Children were taken the exam, and Mischel and his colleagues
-                                    followed up on the results <strong>later in life</strong>. They discussed
-                                    the findings of a 1990 research that found that <strong>delayed gratification</strong> had
-                                    a significant impact on various metrics, including exam scores.</p>
-                                <p>That conclusion was met with skepticism by Watts and his colleagues. A
-                                    total of fewer than 90 youngsters, all of whom attended a preschool on
-                                    the Stanford University campus, formed the basis for the initial findings.
-                                    Watts and his colleagues thus made significant changes to the trial’s design
-                                    by restaging the experiment. More than <strong>900 children were included</strong> in
-                                    the study, making it more typical of the overall community in terms of
-                                    color, ethnicity, and parents’ educational attainment. Researchers also
-                                    took into account children’s <strong>long-term success and capacity</strong> to
-                                    wait for pleasure while examining their test findings.</p>
-                                <p>The <strong><a href="https://journals.sagepub.com/doi/abs/10.1177/0956797618761661">current study concludes</a></strong> that
-                                    little evidence supports the concept that <strong>deferring pleasure</strong> leads
-                                    to better results. A child’s social and economic background, not their
-                                    ability to defer gratification, is the key to their long-term success,
-                                    rather than their ability to hold out for another marshmallow.</p>
-                                <p>Not only has the <strong>marshmallow test</strong> lately been found to
-                                    be unreliable, but other experiments have as well. In certain circles,
-                                    the term “<a href="https://en.wikipedia.org/wiki/Replication_crisis">replication crisis</a>”
-                                    has been used to describe the current state of psychology. Mischel and
-                                    his colleagues didn’t appear to realize how much of a role circumstances
-                                    play in moulding children’s lives until this new study failed to validate
-                                    their prior views.</p>
-                                <p>When it came to standardized test results and mothers’ evaluations of
-                                    their children’s conduct, those who waited for a second marshmallow <strong>performed no better</strong> than
-                                    those who started right away.</p>
-                                <p>Economic and social obstacles were too much for such youngsters to overcome
-                                    with <strong>self-control alone</strong>.</p>
-                                <p>There are other <strong>conceivable explanations for why poorer children</strong> may
-                                    be less eager to wait for the second marshmallow than their more affluent
-                                    counterparts. Daily living is filled with <strong>uncertainty</strong>:
-                                    food in the cupboard today may not be there tomorrow, thus waiting comes
-                                    with danger. If their parents pledge to buy more of a specific meal, that
-                                    promise may be violated due to a lack of money.</p>
-                                <p>Meanwhile, youngsters whose <strong>parents are more educated and better-off</strong> seem
-                                    to have an easier time delaying satisfaction: They believe that adults
-                                    have the means and financial stability to maintain a well-stocked pantry
-                                    based on their own experiences. In the end, even if these youngsters don’t
-                                    defer gratification, they can still depend on their parents to surprise
-                                    them with some other sweet if they don’t receive the second marshmallow.</p>
-                                <p>The class component of the <strong>marshmallow test can be explored further</strong> in
-                                    future studies. Economists and behavioral scientists Eldar Shafir and Sendhil
-                                    Mullainathan of Harvard University authored the 2013 book, <strong>Scarcity: Why Having Too Little Means So Much</strong>,
-                                    explaining how poverty might cause individuals to prioritize immediate
-                                    gratification above long-term gains. To put it another way, a second marshmallow
-                                    doesn’t seem as important when a toddler is afraid the first one may go.</p>
-                                <p>It’s also possible that some qualitative sociological studies might provide
-                                    light on this issue. According to Ranita Ray, a sociologist at the University
-                                    of Nevada, Las Vegas, many <strong>youths who grew up in poverty</strong> are
-                                    forced to work long hours in low-paying jobs to support themselves and
-                                    their families. Although they may not purchase meals sometimes, the teenagers
-                                    nonetheless treat themselves to McDonald’s or new clothing or hair colour
-                                    on payday. Furthermore, according to my study with Brea Perry, an Indiana
-                                    University sociologist (and colleague of mine), low-income families are
-                                    more inclined to yield to their children’s demands for sugary snacks.</p>
-                                <p>These findings <strong>support the assumption</strong> that poorer parents
-                                    attempt to give their children as much attention as possible. In contrast,
-                                    more affluent parents tend to make their children wait for more substantial
-                                    benefits. There is nothing frivolous about buying hair dye or sweets for
-                                    a needy family; these purchases are frequently all they can afford. A tiny
-                                    amount of happiness can make life more tolerable for poor children, especially
-                                    if there is no promise of further happiness tomorrow.</p>
                             </div>
                         </div>
-            </div>
-            </article>
-            </main>
-            <nav class="post-items">
-                 <h3>Top posts</h3>
+                    </article>
+                </main>
+                <nav class="post-items">
+                     <h3>Top posts</h3>
 
-                <div class="post-item-outer"> <a href="https://www.marshmallowchallenge.com/blog/best-agile-books/">
+                    <div class="post-item-outer"> <a href="https://www.marshmallowchallenge.com/blog/best-agile-books/">
             <div class="top-post-item featured-post">
                 <img class="thumbnail"
                     alt="A pile of colorful books. Includes startup classics, like 'The Lean Startup' and 'Blitzscaling'."
@@ -1037,8 +1061,8 @@
             </div>
         </a>
 
-                </div>
-                <div class="post-item-outer"> <a href="https://www.marshmallowchallenge.com/startups/best-startup-companies/">
+                    </div>
+                    <div class="post-item-outer"> <a href="https://www.marshmallowchallenge.com/startups/best-startup-companies/">
             <div class="top-post-item featured-post">
                 <img class="thumbnail"
                      alt="A man wearing a black shirt sitting on a chair using his laptop in a big empty room."
@@ -1055,8 +1079,8 @@
             </div>
         </a>
 
-                </div>
-                <div class="post-item-outer"> <a href="https://www.marshmallowchallenge.com/startups/best-nft-projects-and-startups/">
+                    </div>
+                    <div class="post-item-outer"> <a href="https://www.marshmallowchallenge.com/startups/best-nft-projects-and-startups/">
             <div class="top-post-item featured-post">
                 <img class="thumbnail"
                      alt="A lot of tiny colorful pictures merged into a big single one."
@@ -1073,8 +1097,8 @@
             </div>
         </a>
 
-                </div>
-                <div class="post-item-outer"> <a href="https://www.marshmallowchallenge.com/blog/profitable-business-ideas-to-start-your-small-business-in-2022/">
+                    </div>
+                    <div class="post-item-outer"> <a href="https://www.marshmallowchallenge.com/blog/profitable-business-ideas-to-start-your-small-business-in-2022/">
             <div class="top-post-item featured-post">
                 <img class="thumbnail"
                      alt="Two women near tables with their laptops."
@@ -1091,8 +1115,8 @@
             </div>
         </a>
 
-                </div>
-                <div class="post-item-outer"> <a href="https://www.marshmallowchallenge.com/blog/what-is-the-metaverse/">
+                    </div>
+                    <div class="post-item-outer"> <a href="https://www.marshmallowchallenge.com/blog/what-is-the-metaverse/">
             <div class="top-post-item featured-post">
                 <img class="thumbnail"
                      alt="Four person playing virtual reality goggles."
@@ -1109,8 +1133,8 @@
             </div>
         </a>
 
-                </div>
-                <div class="post-item-outer"> <a href="https://www.marshmallowchallenge.com/blog/top-5-tips-for-startup-founders/">
+                    </div>
+                    <div class="post-item-outer"> <a href="https://www.marshmallowchallenge.com/blog/top-5-tips-for-startup-founders/">
             <div class="top-post-item featured-post">
                 <img class="thumbnail"
                      alt="A person writing the product roadmap on a whiteboard."
@@ -1127,8 +1151,8 @@
             </div>
         </a>
 
-                </div>
-                <div class="post-item-outer"> <a href="https://www.marshmallowchallenge.com/blog/color-healthcare-startup-raised-100-million/">
+                    </div>
+                    <div class="post-item-outer"> <a href="https://www.marshmallowchallenge.com/blog/color-healthcare-startup-raised-100-million/">
             <div class="top-post-item featured-post">
                 <img class="thumbnail"
                      alt="A doctor is standing in his white robe."
@@ -1145,8 +1169,8 @@
             </div>
         </a>
 
-                </div>
-                <div class="post-item-outer"> <a href="https://www.marshmallowchallenge.com/blog/introducing-the-global-poker-sweeps-cash-model/">
+                    </div>
+                    <div class="post-item-outer"> <a href="https://www.marshmallowchallenge.com/blog/introducing-the-global-poker-sweeps-cash-model/">
             <div class="top-post-item featured-post">
                 <img class="thumbnail"
                      alt="Person holding white and black playing cards."
@@ -1163,8 +1187,8 @@
             </div>
         </a>
 
-                </div>
-                <div class="post-item-outer"> <a href="https://www.marshmallowchallenge.com/blog/modern-interactive-dog-toys/">
+                    </div>
+                    <div class="post-item-outer"> <a href="https://www.marshmallowchallenge.com/blog/modern-interactive-dog-toys/">
             <div class="top-post-item featured-post">
                 <img class="thumbnail"
                      alt="A schematic view of a plastic dog toy."
@@ -1181,8 +1205,8 @@
             </div>
         </a>
 
-                </div>
-                <div class="post-item-outer"> <a href="https://www.marshmallowchallenge.com/blog/why-finland-is-a-new-hub-for-online-startups/">
+                    </div>
+                    <div class="post-item-outer"> <a href="https://www.marshmallowchallenge.com/blog/why-finland-is-a-new-hub-for-online-startups/">
             <div class="top-post-item featured-post">
                 <img class="thumbnail"
                      alt="Hundred Finnish flags, each with blue cross on white background."
@@ -1199,8 +1223,8 @@
             </div>
         </a>
 
-                </div>
-                <div class="post-item-outer"> <a href="https://www.marshmallowchallenge.com/blog/lithuania-will-set-a-new-record-for-investments-in-2021/">
+                    </div>
+                    <div class="post-item-outer"> <a href="https://www.marshmallowchallenge.com/blog/lithuania-will-set-a-new-record-for-investments-in-2021/">
             <div class="top-post-item featured-post">
                 <img class="thumbnail"
                      alt="A picture of Vilnius, a nice a clean street towards a white and gray tower."
@@ -1217,8 +1241,8 @@
             </div>
         </a>
 
-                </div>
-                <div class="post-item-outer"> <a href="https://www.marshmallowchallenge.com/blog/why-online-businesses-should-accept-mobile-payments/">
+                    </div>
+                    <div class="post-item-outer"> <a href="https://www.marshmallowchallenge.com/blog/why-online-businesses-should-accept-mobile-payments/">
             <div class="top-post-item featured-post">
                 <img class="thumbnail"
                      alt="Person holding black smartphone."
@@ -1235,8 +1259,8 @@
             </div>
         </a>
 
-                </div>
-                <div class="post-item-outer"> <a href="https://www.marshmallowchallenge.com/blog/how-to-create-good-teams/">
+                    </div>
+                    <div class="post-item-outer"> <a href="https://www.marshmallowchallenge.com/blog/how-to-create-good-teams/">
             <div class="top-post-item featured-post">
                 <img class="thumbnail"
                      alt="People on white and blue boat paddling under gray clouds during daytime."
@@ -1253,8 +1277,8 @@
             </div>
         </a>
 
-                </div>
-                <div class="post-item-outer"> <a href="https://www.marshmallowchallenge.com/blog/top-sites-ranking-for-e-commerce-and-shopping-in-the-world/">
+                    </div>
+                    <div class="post-item-outer"> <a href="https://www.marshmallowchallenge.com/blog/top-sites-ranking-for-e-commerce-and-shopping-in-the-world/">
             <div class="top-post-item featured-post">
                 <img class="thumbnail"
                      alt="A blue road sign with 'e commerce' written on it."
@@ -1271,20 +1295,21 @@
             </div>
         </a>
 
-                </div>
-            </nav>
-        </div>
-        <aside class="site-footer-outer">
-            <footer class="site-footer">
-                <div class="footer-logo"> <span style="font-weight: 700">marshmallow</span><span style="font-weight: 400">challenge</span>
-                    <span
-                    style="font-weight: 700" class="logo-line">|</span>
-                </div>
-                <div class="footer-copyright"> <span><a href="https://www.marshmallowchallenge.com/sitemap.xml">sitemap</a></span> | <span><a href="mailto:info@marshmallowchallenge.com">email</a></span> | <span><a href="https://twitter.com/@marshmallowchal">twitter</a></span>
+                    </div>
+                </nav>
+            </div>
+            <aside class="site-footer-outer">
+                <footer class="site-footer">
+                    <div class="footer-logo"> <span style="font-weight: 700">marshmallow</span><span style="font-weight: 400">challenge</span>
+                        <span
+                        style="font-weight: 700" class="logo-line">|</span>
+                    </div>
+                    <div class="footer-copyright"> <span><a href="https://www.marshmallowchallenge.com/sitemap.xml">sitemap</a></span> | <span><a href="mailto:info@marshmallowchallenge.com">email</a></span>
+| <span><a href="https://twitter.com/@marshmallowchal">twitter</a></span>
 
-                </div>
-            </footer>
-        </aside>
+                    </div>
+                </footer>
+            </aside>
         </div>
         <script defer src="https://www.marshmallowchallenge.com/assets/js/main.js"></script>
     </body>
