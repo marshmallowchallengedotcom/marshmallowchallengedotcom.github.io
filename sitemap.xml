@@ -141,6 +141,11 @@
         <changefreq>daily</changefreq>
     </url>
     <url>
+        <loc>https://www.marshmallowchallenge.com/blog/introducing-the-global-poker-sweeps-cash-model/</loc>
+        <lastmod>2021-11-15</lastmod>
+        <changefreq>daily</changefreq>
+    </url>
+    <url>
         <loc>https://www.marshmallowchallenge.com/blog/what-is-the-metaverse/</loc>
         <lastmod>2021-11-15</lastmod>
         <changefreq>daily</changefreq>
@@ -158,6 +163,11 @@
     <url>
         <loc>https://www.marshmallowchallenge.comblog/the-top-unicorns-of-2021/</loc>
         <lastmod>2021-12-15</lastmod>
+        <changefreq>daily</changefreq>
+    </url>
+    <url>
+        <loc>https://www.marshmallowchallenge.comblog/everything-you-need-to-know-about-the-marshmallow-experiment/</loc>
+        <lastmod>2021-12-22</lastmod>
         <changefreq>daily</changefreq>
     </url>
 </urlset>
