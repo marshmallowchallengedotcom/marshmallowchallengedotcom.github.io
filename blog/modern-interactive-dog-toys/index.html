@@ -91,8 +91,7 @@
                 h2,
                 h3,
                 h4,
-                strong,
-                .site-navigation {
+                strong {
                   font-weight: 700;
                 }
                 body {
@@ -108,31 +107,6 @@
                 .important-span,
                 .important-span a {
                   color: #007aff;
-                }
-                /*** site-header / footer*/
-                .site-header-outer {
-                  border-bottom: 1px solid #C7DFF3;
-                }
-                .site-footer-outer {
-                    border-top: 1px solid #C7DFF3;
-                    background-color: #f8f9fa;
-                }
-                .site-header,
-                .site-footer {
-                  width: 100%;
-                  margin: 0 auto;
-                  display: flex;
-                  position: relative;
-                  justify-content: space-between;
-                  align-items: center;
-                }
-                .site-header a,
-                .site-footer a {
-                  text-decoration: none;
-                }
-                .site-navigation nav ul {
-                  list-style: none;
-                  display: flex;
                 }
                 
                 /*** images */
@@ -172,11 +146,11 @@
                 .top-post-item .thumbnail {
                   width: 80px;
                   height: 80px;
-                  opacity: 0.85;
+                  opacity: 1.0;
                 }
                 
                 .top-post-item .thumbnail:hover {
-                  opacity: 1.0;
+                  opacity: 0.85;
                 }
                 
                 .top-post-item.featured-post .category {
@@ -248,6 +222,261 @@
                     border-left: 6px solid #007aff;
                 }
                 
+                  .site-header-outer {
+                  border-bottom: 1px solid #C7DFF3;
+                }
+                .site-header {
+                  width: 100%;
+                  margin: 0 auto;
+                  display: flex;
+                  position: relative;
+                  justify-content: space-between;
+                  align-items: center;
+                }
+                .site-header a {
+                  text-decoration: none;
+                }
+                .site-header {
+                  padding: 12px 6px;
+                  font-size: 15px;
+                  line-height: 17px;
+                }
+                .site-navigation {
+                  font-weight: 700;
+                }
+                .site-navigation nav li {
+                  padding-left: 10px;
+                }
+                .site-navigation nav ul {
+                  list-style: none;
+                  display: flex;
+                }
+                @media (min-width: 800px) {
+                    .site-header {
+                      margin: 0 auto;
+                      max-width: 824px;
+                    }
+                }
+                @media (min-width: 1280px) {
+                    .site-header {
+                      max-width: 1280px;
+                      font-size: 16px;
+                      line-height: 18px;
+                      padding: 12px;
+                    }
+                    .site-navigation {
+                      font-size: 16px;
+                      font-weight: bold;
+                      line-height: 19px;
+                    }
+                    .site-navigation nav li {
+                      padding-left: 16px;
+                    }
+                }
+                @media (min-width: 1366px) {
+                    .site-header {
+                      max-width: 1366px;
+                    }
+                }
+                  .site-footer-outer {
+                    border-top: 1px solid #C7DFF3;
+                    background-color: #f8f9fa;
+                }
+                .site-footer {
+                    width: 100%;
+                    margin: 0 auto;
+                    display: flex;
+                    position: relative;
+                    justify-content: space-between;
+                    align-items: center;
+                }
+                .site-footer {
+                    padding: 32px 6px 12px;
+                    font-size: 12px;
+                }
+                .site-footer a {
+                    text-decoration: none;
+                }
+                @media (min-width: 800px) {
+                    .site-footer {
+                      margin: 0 auto;
+                      max-width: 824px;
+                    }
+                }
+                @media (min-width: 1280px) {
+                    .site-footer {
+                      max-width: 1280px;
+                      padding: 60px 12px 24px 12px;
+                      font-size: 14px;
+                      line-height: 18px;
+                    }
+                }
+                @media (min-width: 1366px) {
+                    .site-footer {
+                      max-width: 1366px;
+                    }
+                }
+                  .index-item-outer-medium .index-item {
+                  flex-direction: column;
+                }
+                
+                .index-item-outer-medium {
+                  width: 100%;
+                }
+                
+                .index-item-outer-medium .index-item {
+                  margin: 8px;
+                }
+                
+                .index-item-outer-medium .index-item .thumbnail {
+                  width: 100%;
+                  height: 200px;
+                }
+                
+                .index-item-outer-medium .thumbnail img {
+                  border-radius: 2px 2px 0 0;
+                }
+                
+                .index-item {
+                  display: flex;
+                  border-radius: 2px;
+                  border: 1px solid #C7DFF3;
+                }
+                
+                .index-item .meta2 {
+                  padding: 10px;
+                }
+                
+                .index-item .meta2 * {
+                  margin: 0 0 8px 0;
+                }
+                
+                .index-item .meta2 .title {
+                  height: 40px;
+                  font-size: 17px;
+                  line-height: 20px;
+                }
+                
+                .index-item .meta2 .category, .index-item .meta2 .category a {
+                  font-size: 13px;
+                  line-height: 16px;
+                  color: #007aff;
+                  text-transform: uppercase;
+                }
+                
+                .index-item-outer-medium .meta2 .excerpt {
+                  font-size: 15px;
+                  line-height: 20px;
+                  max-height: 80px;
+                  height: 80px;
+                  overflow: hidden;
+                  text-overflow: ellipsis;
+                  display: inline-block;
+                  margin: 0;
+                }
+                
+                .thumbnail img {
+                  height: 100%;
+                  width: 100%;
+                  object-fit: cover;
+                }
+                
+                .td {
+                  text-decoration: none;
+                }
+                
+                @media (min-width: 740px) {
+                
+                  .index-item-outer-medium {
+                    width: 50%;
+                  }
+                  .index-item .thumbnail {
+                    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+                  }
+                
+                  .index-item:hover .thumbnail {
+                    filter: brightness(85%);
+                  }
+                }
+                
+                @media (min-width: 1020px) {
+                .index-item .meta2 .title {
+                  height: 60px;
+                }
+                }
+                
+                @media (min-width: 1366px) {}
+                
+                  .index-item-outer-wide .index-item {
+                  flex-direction: column;
+                }
+                
+                .index-item-outer-wide {
+                  width: 100%;
+                }
+                
+                .index-item-outer-wide .index-item {
+                  margin: 8px;
+                }
+                
+                .index-item-outer-wide .thumbnail {
+                  width: 100%;
+                  height: 180px;
+                }
+                
+                .index-item-outer-wide .thumbnail img {
+                  border-radius: 2px 0 0 2px;
+                }
+                
+                .index-item-outer-wide .meta2 {
+                  width: 100%;
+                }
+                
+                .index-item-outer-wide .meta2 .excerpt {
+                  font-size: 15px;
+                  line-height: 20px;
+                  height: 60px;
+                  overflow: hidden;
+                  text-overflow: ellipsis;
+                  display: inline-block;
+                  margin: 0;
+                }
+                
+                .index-item-outer-wide .index-item .meta2 .title {
+                  height: 40px;
+                  font-size: 17px;
+                  line-height: 20px;
+                }
+                
+                .index-item .meta2 .title a:hover {
+                  color: #555555;
+                }
+                
+                @media (min-width: 740px) {
+                }
+                
+                @media (min-width: 1366px) {}
+                
+                  .index-page {
+                  width: 100%;
+                  display: flex;
+                  flex-flow: wrap;
+                  padding: 0 12px;
+                }
+                .main-index-page {
+                    padding: 12px 6px;
+                }
+                @media (min-width: 800px) {
+                    .main-index-page-outer {
+                      margin: 0 auto;
+                      max-width: 824px;
+                    }
+                }
+                @media (min-width: 1280px) {
+                }
+                @media (min-width: 1366px) {
+                }
+                
                   /*** fonts */
                 h1 {
                   font-size: 28px;
@@ -272,20 +501,6 @@
                 h2, h3, h4 {
                   margin-bottom: 22px;
                   margin-top: 44px;
-                }
-                /*** site header */
-                .site-header {
-                  padding: 12px 6px;
-                  font-size: 15px;
-                  line-height: 17px;
-                }
-                .site-navigation nav li {
-                  padding-left: 10px;
-                }
-                /*** site footer */
-                .site-footer {
-                  padding: 32px 6px 12px;
-                  font-size: 12px;
                 }
                 figcaption {
                   margin-top: 4px;
@@ -483,7 +698,7 @@
                 .full-width-figure {
                   margin: 0 0 16px 0;
                 }
-                .main-content-outer, .site-header, .site-footer {
+                .main-content-outer {
                   margin: 0 auto;
                   max-width: 824px;
                 }
@@ -520,23 +735,6 @@
                   margin-top: 32px;
                   margin-bottom: 32px;
                 }
-                
-                /*** site header */
-                .site-header {
-                  max-width: 1280px;
-                  font-size: 16px;
-                  line-height: 18px;
-                  padding: 12px;
-                }
-                .site-navigation {
-                  font-size: 16px;
-                  font-weight: bold;
-                  line-height: 19px;
-                }
-                .site-navigation nav li {
-                  padding-left: 16px;
-                }
-                
                 /*** main content */
                 .main-content-outer {
                   max-width: 1280px;
@@ -678,20 +876,9 @@
                 .simple-img figcaption {
                   font-size: 12px;
                 }
-                
-                /*** site footer */
-                .site-footer {
-                  max-width: 1280px;
-                  padding: 60px 12px 24px 12px;
-                  font-size: 14px;
-                  line-height: 18px;
-                }
                   }
                   @media (min-width: 1366px) {
                     /*** site header */
-                .site-header {
-                  max-width: 1366px;
-                }
                 
                 /*** main content */
                 .main-content-outer {
@@ -743,11 +930,6 @@
                   line-height: 16px;
                   margin: 0;
                   color: #818181;
-                }
-                
-                /*** site footer */
-                .site-footer {
-                  max-width: 1366px;
                 }
                   }
             </style>
@@ -857,11 +1039,11 @@
         <div class="body-inner">
             <div class="site-header-outer">
                 <header class="site-header">
-                    <nav class="site-logo"> <a href="https://www.marshmallowchallenge.com/">
+                    <div> <a href="https://www.marshmallowchallenge.com/">
                 <span style="font-weight: 700">marshmallow</span><span style="font-weight: 400">challenge</span><span style="font-weight: 700" class="logo-line">|</span>
             </a>
 
-                    </nav>
+                    </div>
                     <div class="site-navigation">
                         <nav>
                             <ul>
@@ -1008,13 +1190,15 @@
                     />
                     <div class="description">
                         <h3 class="category">STARTUPS</h3>
-                        <h4 class="title">Best Agile Books</h4>
+
+                                                  <h4 class="title">Best Agile Books</h4>
 
 
 
 
 
-                                                                                                                                                <span class="meta">191 views - 3 min read</span>
+
+                                                                                                                                                                        <span class="meta">202 views - 3 min read</span>
                     </div>
                 </div>
             </a>
@@ -1031,7 +1215,8 @@
                     />
                     <div class="description">
                         <h3 class="category">STARTUPS</h3>
-                        <h4 class="title">Best Startup Companies</h4>
+
+                                                  <h4 class="title">Best Startup Companies</h4>
 
 
 
@@ -1042,7 +1227,8 @@
 
 
 
-                                                                                                                                                                                                                                                <span class="meta">2,292 views - 5 min read</span>
+
+                                                                                                                                                                                                                                                                        <span class="meta">2,369 views - 5 min read</span>
 
                                             </div>
                 </div>
@@ -1060,7 +1246,8 @@
                     />
                     <div class="description">
                         <h3 class="category">STARTUPS</h3>
-                        <h4 class="title">Best NFT Projects and Startups</h4>
+
+                                                  <h4 class="title">Best NFT Projects and Startups</h4>
 
 
 
@@ -1071,7 +1258,8 @@
 
 
 
-                                                                                                                                                                                                                                                <span class="meta">2,026 views - 4 min read</span>
+
+                                                                                                                                                                                                                                                                        <span class="meta">2,103 views - 4 min read</span>
 
                                             </div>
                 </div>
@@ -1089,7 +1277,8 @@
                     />
                     <div class="description">
                         <h3 class="category">TREND</h3>
-                        <h4 class="title">Blockchain-Based Metaverses</h4>
+
+                                                  <h4 class="title">Blockchain-Based Metaverses</h4>
 
 
 
@@ -1097,7 +1286,36 @@
 
 
 
-                                                                                                                                                                        <span class="meta">66 views - 4 min read</span>
+
+                                                                                                                                                                                                <span class="meta">143 views - 4 min read</span>
+
+                                            </div>
+                </div>
+            </a>
+
+                    </div>
+                    <div class="post-item-outer"> <a href="https://www.marshmallowchallenge.com/blog/secrets-of-a-successful-marketing-campaigns/">
+                <div class="top-post-item featured-post">
+                    <img width="80" height="80" class="thumbnail"
+                         alt="A businessman is buttoning his suite."
+                         srcset="/assets/pictures/businessman-with-suite-80x80.jpg,
+                                /assets/pictures/businessman-with-suite-160x160.jpg 2x"
+                         src="/assets/pictures/businessman-with-suite-80x80.jpg"
+                         loading="lazy"
+                    />
+                    <div class="description">
+                        <h3 class="category">STARTUPS</h3>
+
+                                                  <h4 class="title">Secrets of a Successful Marketing Campaigns All Starting...</h4>
+
+
+
+
+
+
+
+
+                                                                                                                                                                                                <span class="meta">3 views - 5 min read</span>
 
                                             </div>
                 </div>
@@ -1115,7 +1333,8 @@
                     />
                     <div class="description">
                         <h3 class="category">STARTUPS</h3>
-                        <h4 class="title">What Is The Digital Athlete: How AI Can Improve Safety In NFL</h4>
+
+                                                  <h4 class="title">What Is The Digital Athlete: How AI Can Improve Safety In NFL</h4>
 
 
 
@@ -1123,7 +1342,8 @@
 
 
 
-                                                                                                                                                                        <span class="meta">199 views - 5 min read</span>
+
+                                                                                                                                                                                                <span class="meta">276 views - 5 min read</span>
 
                                             </div>
                 </div>
@@ -1141,7 +1361,8 @@
                     />
                     <div class="description">
                         <h3 class="category">STARTUPS</h3>
-                        <h4 class="title">5 Tips to Build Social Media Presence for Your Startup</h4>
+
+                                                  <h4 class="title">5 Tips to Build Social Media Presence for Your Startup</h4>
 
 
 
@@ -1149,7 +1370,8 @@
 
 
 
-                                                                                                                                                                        <span class="meta">206 views - 3 min read</span>
+
+                                                                                                                                                                                                <span class="meta">283 views - 3 min read</span>
 
                                             </div>
                 </div>
@@ -1167,7 +1389,8 @@
                     />
                     <div class="description">
                         <h3 class="category">TRENDS</h3>
-                        <h4 class="title">What You Need To Know About The Marshmallow Experiment</h4>
+
+                                                  <h4 class="title">What You Need To Know About The Marshmallow Experiment</h4>
 
 
 
@@ -1175,7 +1398,8 @@
 
 
 
-                                                                                                                                                                        <span class="meta">388 views - 5 min read</span>
+
+                                                                                                                                                                                                <span class="meta">465 views - 5 min read</span>
 
                                             </div>
                 </div>
@@ -1193,7 +1417,8 @@
                     />
                     <div class="description">
                         <h3 class="category">TRENDS</h3>
-                        <h4 class="title">6 Small Profitable Business Ideas In 2022 – Set Up A Business Now!</h4>
+
+                                                  <h4 class="title">6 Small Profitable Business Ideas In 2022 – Set Up A Business Now!</h4>
 
 
 
@@ -1201,7 +1426,8 @@
 
 
 
-                                                                                                                                                                        <span class="meta">241 views - 4 min read</span>
+
+                                                                                                                                                                                                <span class="meta">318 views - 4 min read</span>
 
                                             </div>
                 </div>
@@ -1219,7 +1445,8 @@
                     />
                     <div class="description">
                         <h3 class="category">TRENDS</h3>
-                        <h4 class="title">The Top Unicorns of 2021</h4>
+
+                                                  <h4 class="title">The Top Unicorns of 2021</h4>
 
 
 
@@ -1227,7 +1454,8 @@
 
 
 
-                                                                                                                                                                        <span class="meta">437 views - 4 min read</span>
+
+                                                                                                                                                                                                <span class="meta">514 views - 4 min read</span>
 
                                             </div>
                 </div>
@@ -1245,7 +1473,8 @@
                     />
                     <div class="description">
                         <h3 class="category">STARTUPS</h3>
-                        <h4 class="title">Profitable Business Ideas To Start Your Small Business In 2022</h4>
+
+                                                  <h4 class="title">Profitable Business Ideas To Start Your Small Business In 2022</h4>
 
 
 
@@ -1253,7 +1482,8 @@
 
 
 
-                                                                                                                                                                        <span class="meta">640 views - 5 min read</span>
+
+                                                                                                                                                                                                <span class="meta">717 views - 5 min read</span>
 
                                             </div>
                 </div>
@@ -1271,7 +1501,8 @@
                     />
                     <div class="description">
                         <h3 class="category">TRENDS</h3>
-                        <h4 class="title">The Newest Ideas for Running a Profitable Business on the Side</h4>
+
+                                                  <h4 class="title">The Newest Ideas for Running a Profitable Business on the Side</h4>
 
 
 
@@ -1279,7 +1510,8 @@
 
 
 
-                                                                                                                                                                        <span class="meta">248 views - 4 min read</span>
+
+                                                                                                                                                                                                <span class="meta">325 views - 4 min read</span>
 
                                             </div>
                 </div>
@@ -1297,7 +1529,8 @@
                     />
                     <div class="description">
                         <h3 class="category">STARTUPS</h3>
-                        <h4 class="title">Top 5 Tips for Startup Founders</h4>
+
+                                                  <h4 class="title">Top 5 Tips for Startup Founders</h4>
 
 
 
@@ -1305,7 +1538,8 @@
 
 
 
-                                                                                                                                                                        <span class="meta">682 views - 5 min read</span>
+
+                                                                                                                                                                                                <span class="meta">759 views - 5 min read</span>
 
                                             </div>
                 </div>
@@ -1323,7 +1557,8 @@
                     />
                     <div class="description">
                         <h3 class="category">TRENDS</h3>
-                        <h4 class="title">What Is The Metaverse?</h4>
+
+                                                  <h4 class="title">What Is The Metaverse?</h4>
 
 
 
@@ -1331,7 +1566,8 @@
 
 
 
-                                                                                                                                                                        <span class="meta">647 views - 5 min read</span>
+
+                                                                                                                                                                                                <span class="meta">724 views - 5 min read</span>
 
                                             </div>
                 </div>
@@ -1349,7 +1585,8 @@
                     />
                     <div class="description">
                         <h3 class="category">TRENDS</h3>
-                        <h4 class="title">Marshmallow Test</h4>
+
+                                                  <h4 class="title">Marshmallow Test</h4>
 
 
 
@@ -1357,7 +1594,8 @@
 
 
 
-                                                                                                                                                                        <span class="meta">584 views - 5 min read</span>
+
+                                                                                                                                                                                                <span class="meta">661 views - 5 min read</span>
 
                                             </div>
                 </div>
@@ -1375,7 +1613,8 @@
                     />
                     <div class="description">
                         <h3 class="category">STARTUPS</h3>
-                        <h4 class="title">Introducing The Global Poker Sweeps Cash Model</h4>
+
+                                                  <h4 class="title">Introducing The Global Poker Sweeps Cash Model</h4>
 
 
 
@@ -1383,7 +1622,8 @@
 
 
 
-                                                                                                                                                                        <span class="meta">647 views - 5 min read</span>
+
+                                                                                                                                                                                                <span class="meta">724 views - 5 min read</span>
 
                                             </div>
                 </div>
@@ -1401,7 +1641,8 @@
                     />
                     <div class="description">
                         <h3 class="category">STARTUPS</h3>
-                        <h4 class="title">Why Finland is a New Hub for Online Startups</h4>
+
+                                                  <h4 class="title">Why Finland is a New Hub for Online Startups</h4>
 
 
 
@@ -1412,7 +1653,8 @@
 
 
 
-                                                                                                                                                                                                                                                <span class="meta">1,046 views - 5 min read</span>
+
+                                                                                                                                                                                                                                                                        <span class="meta">1,123 views - 5 min read</span>
 
                                             </div>
                 </div>
@@ -1430,7 +1672,8 @@
                     />
                     <div class="description">
                         <h3 class="category">STARTUPS</h3>
-                        <h4 class="title">Why Online Businesses Should Be Accepting Mobile Payments</h4>
+
+                                                  <h4 class="title">Why Online Businesses Should Be Accepting Mobile Payments</h4>
 
 
 
@@ -1441,7 +1684,8 @@
 
 
 
-                                                                                                                                                                                                                                                <span class="meta">1,067 views - 5 min read</span>
+
+                                                                                                                                                                                                                                                                        <span class="meta">1,144 views - 5 min read</span>
 
                                             </div>
                 </div>
@@ -1459,7 +1703,8 @@
                     />
                     <div class="description">
                         <h3 class="category">E-COMMERCE</h3>
-                        <h4 class="title">Top Sites Ranking for e-Commerce and Shopping in the World</h4>
+
+                                                  <h4 class="title">Top Sites Ranking for e-Commerce and Shopping in the World</h4>
 
 
 
@@ -1470,7 +1715,8 @@
 
 
 
-                                                                                                                                                                                                                                                <span class="meta">1,571 views - 4 min read</span>
+
+                                                                                                                                                                                                                                                                        <span class="meta">1,648 views - 4 min read</span>
 
                                             </div>
                 </div>
@@ -1488,7 +1734,8 @@
                     />
                     <div class="description">
                         <h3 class="category">STARTUPS</h3>
-                        <h4 class="title">Lithuania Will Set a New Record for Investments in 2021</h4>
+
+                                                  <h4 class="title">Lithuania Will Set a New Record for Investments in 2021</h4>
 
 
 
@@ -1499,7 +1746,8 @@
 
 
 
-                                                                                                                                                                                                                                                <span class="meta">1,060 views - 3 min read</span>
+
+                                                                                                                                                                                                                                                                        <span class="meta">1,137 views - 3 min read</span>
 
                                             </div>
                 </div>
@@ -1517,7 +1765,8 @@
                     />
                     <div class="description">
                         <h3 class="category">TEAMS</h3>
-                        <h4 class="title">How to Create Good Teams?</h4>
+
+                                                  <h4 class="title">How to Create Good Teams?</h4>
 
 
 
@@ -1528,7 +1777,8 @@
 
 
 
-                                                                                                                                                                                                                                                <span class="meta">1,088 views - 5 min read</span>
+
+                                                                                                                                                                                                                                                                        <span class="meta">1,165 views - 5 min read</span>
 
                                             </div>
                 </div>
@@ -1539,11 +1789,11 @@
             </div>
             <aside class="site-footer-outer">
                 <footer class="site-footer">
-                    <div class="footer-logo"> <span style="font-weight: 700">marshmallow</span><span style="font-weight: 400">challenge</span>
+                    <div> <span style="font-weight: 700">marshmallow</span><span style="font-weight: 400">challenge</span>
                         <span
                         style="font-weight: 700" class="logo-line">|</span>
                     </div>
-                    <div class="footer-copyright"> <span><a href="https://www.marshmallowchallenge.com/sitemap.xml">sitemap</a></span> | <span><a href="mailto:info@marshmallowchallenge.com">email</a></span>
+                    <div> <span><a href="https://www.marshmallowchallenge.com/sitemap.xml">sitemap</a></span> | <span><a href="mailto:info@marshmallowchallenge.com">email</a></span>
 | <span><a href="https://twitter.com/@marshmallowchal">twitter</a></span>
 
                     </div>
