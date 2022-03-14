@@ -152,12 +152,23 @@ figcaption {
 }
 
 /*** post items */
+.post-items {
+  padding: 12px 6px;
+}
 .post-items a {
   text-decoration: none;
 }
+.post-items h3 {
+  font-size: 14px;
+  line-height: 16px;
+  color: #333333;
+  font-weight: bold;
+  margin-top: unset;
+  margin-bottom: 6px;
+}
 .post-items h4 {
   margin-top: 0px;
-  margin-bottom: 0px;
+  margin-bottom: 4px;
 }
 .top-post-item {
   display: flex;
@@ -169,6 +180,12 @@ figcaption {
   text-decoration: none;
 }
 
+.top-post-item .description .tp-meta {
+  font-size: 12px;
+  line-height: 14px;
+  margin: 0;
+  color: #818181;
+}
 .top-post-item .thumbnail {
   width: 80px;
   height: 80px;
@@ -681,6 +698,11 @@ p {
   margin: 0 12px;
 }
 /*** meta */
+.tp-meta {
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+ }
 .meta {
   margin-top: 32px;
   margin-bottom: 16px;
@@ -852,16 +874,11 @@ p {
   padding: 12px;
   padding-left: 24px;
 }
+.post-items h4 {
+  margin-bottom: 0px;
+}
 .top-post-item {
   padding: 0;
-}
-.post-items h3 {
-  font-size: 14px;
-  line-height: 16px;
-  color: #333333;
-  font-weight: bold;
-  margin-top: unset;
-  margin-bottom: 6px;
 }
 .post-item-outer {
   padding: 12px 0;
@@ -881,12 +898,6 @@ p {
   line-height: 15px;
   height: 45px;
   text-overflow: ellipsis;
-}
-.top-post-item .description .meta {
-  font-size: 12px;
-  line-height: 14px;
-  margin: 0;
-  color: #818181;
 }
 
 /*** images */
@@ -951,7 +962,7 @@ p {
   height: 48px;
   text-overflow: ellipsis;
 }
-.top-post-item .description .meta {
+.top-post-item .description .tp-meta {
   font-size: 12px;
   line-height: 14px;
   margin: 0;
@@ -1347,7 +1358,7 @@ p {
                         
                         
                         
-                        <span class="meta">1,508 views - 3 min read</span>
+                        <span class="tp-meta">1,508 views - 3 min read</span>
                         
                     </div>
                 </div>
@@ -1385,7 +1396,7 @@ p {
                         
 
                         
-                        <span class="meta">10 views - 5 min read</span>
+                        <span class="tp-meta">10 views - 5 min read</span>
                         
                     </div>
                 </div>
@@ -1422,7 +1433,7 @@ p {
                         
 
                         
-                        <span class="meta">10 views - 5 min read</span>
+                        <span class="tp-meta">10 views - 5 min read</span>
                         
                     </div>
                 </div>
@@ -1459,7 +1470,7 @@ p {
                         
 
                         
-                        <span class="meta">31 views - 5 min read</span>
+                        <span class="tp-meta">31 views - 5 min read</span>
                         
                     </div>
                 </div>
@@ -1496,7 +1507,7 @@ p {
                         
 
                         
-                        <span class="meta">24 views - 5 min read</span>
+                        <span class="tp-meta">24 views - 5 min read</span>
                         
                     </div>
                 </div>
@@ -1533,7 +1544,7 @@ p {
                         
 
                         
-                        <span class="meta">38 views - 5 min read</span>
+                        <span class="tp-meta">38 views - 5 min read</span>
                         
                     </div>
                 </div>
@@ -1570,7 +1581,7 @@ p {
                         
 
                         
-                        <span class="meta">45 views - 5 min read</span>
+                        <span class="tp-meta">45 views - 5 min read</span>
                         
                     </div>
                 </div>
@@ -1607,7 +1618,7 @@ p {
                         
 
                         
-                        <span class="meta">66 views - 5 min read</span>
+                        <span class="tp-meta">66 views - 5 min read</span>
                         
                     </div>
                 </div>
@@ -1644,7 +1655,7 @@ p {
                         
 
                         
-                        <span class="meta">73 views - 5 min read</span>
+                        <span class="tp-meta">73 views - 5 min read</span>
                         
                     </div>
                 </div>
@@ -1681,7 +1692,7 @@ p {
                         
 
                         
-                        <span class="meta">80 views - 5 min read</span>
+                        <span class="tp-meta">80 views - 5 min read</span>
                         
                     </div>
                 </div>
@@ -1718,7 +1729,7 @@ p {
                         
 
                         
-                        <span class="meta">87 views - 5 min read</span>
+                        <span class="tp-meta">87 views - 5 min read</span>
                         
                     </div>
                 </div>
@@ -1755,7 +1766,7 @@ p {
                         
 
                         
-                        <span class="meta">185 views - 10 min read</span>
+                        <span class="tp-meta">185 views - 10 min read</span>
                         
                     </div>
                 </div>
@@ -1792,7 +1803,7 @@ p {
                         
 
                         
-                        <span class="meta">87 views - 5 min read</span>
+                        <span class="tp-meta">87 views - 5 min read</span>
                         
                     </div>
                 </div>
@@ -1829,7 +1840,7 @@ p {
                         
 
                         
-                        <span class="meta">101 views - 5 min read</span>
+                        <span class="tp-meta">101 views - 5 min read</span>
                         
                     </div>
                 </div>
@@ -1866,7 +1877,7 @@ p {
                         
 
                         
-                        <span class="meta">94 views - 5 min read</span>
+                        <span class="tp-meta">94 views - 5 min read</span>
                         
                     </div>
                 </div>
@@ -1903,7 +1914,7 @@ p {
                         
 
                         
-                        <span class="meta">108 views - 5 min read</span>
+                        <span class="tp-meta">108 views - 5 min read</span>
                         
                     </div>
                 </div>
@@ -1940,7 +1951,7 @@ p {
                         
 
                         
-                        <span class="meta">122 views - 5 min read</span>
+                        <span class="tp-meta">122 views - 5 min read</span>
                         
                     </div>
                 </div>
@@ -1977,7 +1988,7 @@ p {
                         
 
                         
-                        <span class="meta">255 views - 4 min read</span>
+                        <span class="tp-meta">255 views - 4 min read</span>
                         
                     </div>
                 </div>
@@ -2014,7 +2025,7 @@ p {
                         
 
                         
-                        <span class="meta">115 views - 5 min read</span>
+                        <span class="tp-meta">115 views - 5 min read</span>
                         
                     </div>
                 </div>
@@ -2051,7 +2062,7 @@ p {
                         
 
                         
-                        <span class="meta">388 views - 5 min read</span>
+                        <span class="tp-meta">388 views - 5 min read</span>
                         
                     </div>
                 </div>
@@ -2088,7 +2099,7 @@ p {
                         
 
                         
-                        <span class="meta">395 views - 3 min read</span>
+                        <span class="tp-meta">395 views - 3 min read</span>
                         
                     </div>
                 </div>
@@ -2125,7 +2136,7 @@ p {
                         
 
                         
-                        <span class="meta">430 views - 4 min read</span>
+                        <span class="tp-meta">430 views - 4 min read</span>
                         
                     </div>
                 </div>
@@ -2162,7 +2173,7 @@ p {
                         
 
                         
-                        <span class="meta">626 views - 4 min read</span>
+                        <span class="tp-meta">626 views - 4 min read</span>
                         
                     </div>
                 </div>
@@ -2199,7 +2210,7 @@ p {
                         
 
                         
-                        <span class="meta">829 views - 5 min read</span>
+                        <span class="tp-meta">829 views - 5 min read</span>
                         
                     </div>
                 </div>
@@ -2236,7 +2247,7 @@ p {
                         
 
                         
-                        <span class="meta">836 views - 5 min read</span>
+                        <span class="tp-meta">836 views - 5 min read</span>
                         
                     </div>
                 </div>
@@ -2273,7 +2284,7 @@ p {
                         
 
                         
-                        <span class="meta">437 views - 4 min read</span>
+                        <span class="tp-meta">437 views - 4 min read</span>
                         
                     </div>
                 </div>
@@ -2310,7 +2321,7 @@ p {
                         
 
                         
-                        <span class="meta">871 views - 5 min read</span>
+                        <span class="tp-meta">871 views - 5 min read</span>
                         
                     </div>
                 </div>
@@ -2347,7 +2358,7 @@ p {
                         
 
                         
-                        <span class="meta">836 views - 5 min read</span>
+                        <span class="tp-meta">836 views - 5 min read</span>
                         
                     </div>
                 </div>
@@ -2387,7 +2398,7 @@ p {
                         
                         
                         
-                        <span class="meta">1,235 views - 5 min read</span>
+                        <span class="tp-meta">1,235 views - 5 min read</span>
                         
                     </div>
                 </div>
@@ -2427,7 +2438,7 @@ p {
                         
                         
                         
-                        <span class="meta">1,256 views - 5 min read</span>
+                        <span class="tp-meta">1,256 views - 5 min read</span>
                         
                     </div>
                 </div>
@@ -2467,7 +2478,7 @@ p {
                         
                         
                         
-                        <span class="meta">1,760 views - 4 min read</span>
+                        <span class="tp-meta">1,760 views - 4 min read</span>
                         
                     </div>
                 </div>
