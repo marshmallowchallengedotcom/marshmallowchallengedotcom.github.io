@@ -519,6 +519,50 @@ figcaption {
 }
 @media (min-width: 1366px) {
 }
+  .more-to-read-items {
+    padding: 12px 6px;
+    border-top: 1px solid #C7DFF3;
+}
+.more-to-read-items a {
+    text-decoration: none;
+}
+.more-to-read-item-outer {
+    border-top: 1px solid #C7DFF3;
+    padding: 12px;
+}
+.more-to-read-items h3 {
+     margin-top: 12px;
+ }
+.more-to-read-items h4 {
+     font-size: 13px;
+     line-height: 18px;
+     margin: 0;
+ }
+@media (min-width: 800px) {
+    .more-to-read-items-inner{
+        display: flex;
+        flex-flow: wrap;
+    }
+    .more-to-read-item-outer {
+        width: 50%;
+    }
+}
+@media (min-width: 1280px) {
+    .more-to-read-item-outer {
+        width: 33.3333%;
+    }
+    .more-to-read-items {
+        width: 100%;
+        padding: 12px;
+    }
+    .more-to-read-items h3 {
+         margin-top: 24px;
+         font-size: 18px;
+         line-height: 22px;
+     }
+}
+@media (min-width: 1366px) {
+}
 
   /*** fonts */
 h1 {
@@ -814,6 +858,8 @@ p {
 
 /*** post items */
 .toc {
+  background-color: white;
+  border-radius: 12px;
   display: unset;
   position: sticky;
   top: 44px;
